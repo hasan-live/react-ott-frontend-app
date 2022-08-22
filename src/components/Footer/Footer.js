@@ -3,14 +3,16 @@ import Footerbottom from './Footerbottom';
 import { Routes, Route, Link } from "react-router-dom";
 import Footersubscriber from './Footersubscriber';
 import Footerbands from './Footerbands';
+import playicon1 from '../../assets/images/home/footer/playicon1.png';
+import playicon2 from '../../assets/images/home/footer/playicon2.png';
 
 const Footer = () => {
     return (
         <>
         <Footerbands/>
         <Footersubscriber/>
-            <footer class="footer p-10 bg-stone-900 text-base-100">
-                <div>
+            <section class="footer px-20 py-10  bg-accent text-base-100">
+                <div className='mx-auto'>
                     <div class="mb-6 md:mb-0">
                         <a href="https://flowbite.com/" class="flex items-center">
                             {/* <img src="https://flowbite.com/docs/images/logo.svg" class="mr-3 h-8" alt="FlowBite Logo" />
@@ -25,7 +27,7 @@ const Footer = () => {
 
                     <p>Miru is video streaming lorem ipsum dolor sit amet,<br /> consectetur adipiscing elit, sed do eiusmod tempor <br />incididunt ut labore et dolore magna aliqua.Ut <br /> enim ad minim veniam, quis nostrud exercitation <br />  ullamco.Providing reliable tech since 1992</p>
 
-                    <span className='text-xl font-bold text-cyan-100'>Follow Us</span>
+                    <span className='text-xl font-bold text-white mt-2'>Follow Us</span>
 
                     <div class="flex mt-4 space-x-6 sm:justify-center md:mt-0">
                         <a href="#" class="text-gray-400 hover:text-red-500 dark:hover:text-white">
@@ -80,24 +82,24 @@ const Footer = () => {
                 </div>
                 <div>
                     <div class=" bg-gray-800 rounded-lg">
-                        <div class="max-w-2xl mx-auto text-white py-10">
+                        <div class="max-w-xl mx-auto text-white py-10 px-2">
                             <div class="text-center">
                                 <h3 class="text-2xl mb-3"> Watch OTT Everywhere & <br />
                                     Get Unlimited Access  </h3>
                                 <p> <span className='text-xl font-bold'>Download</span> the App Now </p>
-                                <div class="flex justify-center my-10">
-                                    <div class="flex items-center border w-auto rounded-lg px-4 py-2 w-52 mx-2">
-                                        <img src="https://cdn-icons-png.flaticon.com/512/888/888857.png" class="w-7 md:w-8" />
+                                <div class="flex justify-center my-10 ">
+                                    <div class="flex items-center border w-auto rounded-lg px-4 py-2 w-52 mx-2 bg-primary">
+                                        <img src={playicon1} class="w-7 md:w-8" />
                                         <div class="text-left ml-3">
-                                            <p class='text-xs text-gray-200'>Download on </p>
-                                            <p class="text-sm md:text-base"> Google Play Store </p>
+                                            <p class='text-xs text-gray-200 uppercase'>Download on the</p>
+                                            <p class="text-sm md:text-base"> Play Store </p>
                                         </div>
                                     </div>
-                                    <div class="flex items-center border w-auto rounded-lg px-4 py-2 w-44 mx-2">
-                                        <img src="https://cdn-icons-png.flaticon.com/512/888/888841.png" class="w-7 md:w-8" />
+                                    <div class="flex items-center border w-auto rounded-lg px-4 py-2 w-52 mx-2">
+                                        <img src={playicon2} class="w-7 md:w-8" />
                                         <div class="text-left ml-3">
-                                            <p class='text-xs text-gray-200'>Download on </p>
-                                            <p class="text-sm md:text-base"> Apple Store </p>
+                                            <p class='text-xs text-gray-200 uppercase'>Download on the </p>
+                                            <p class="text-sm md:text-base"> Play Store </p>
                                         </div>
                                     </div>
                                 </div>
@@ -105,7 +107,7 @@ const Footer = () => {
                         </div>
                     </div>
                 </div>
-            </footer>
+            </section>
 
             <Footerbottom />
         </>
