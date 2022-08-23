@@ -16,7 +16,7 @@ const Footersubscriber = () => {
                             <button class="btn btn-secondary absolute ml-2 rounded-l-none">Subscribe</button>
                         </div>
                     </div>
-                    <div class="flex md:ml-auto md:mr-0 ms:md-0 mx-auto justify-start">
+                    <div class="flex md:ml-auto md:mr-0 ms:md-0 mx-auto justify-center">
                         <span class="absolute text-white">All Over The <br />
                             Bangladesh</span>
                     </div>

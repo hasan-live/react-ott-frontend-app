@@ -9,6 +9,9 @@ import Home from './components/Pages/Home/Home';
 import Movies from './components/Pages/Movies/Movies';
 
 
+
+
+
 function App() {
   return (
     <div className="App">

@@ -9,7 +9,7 @@ module.exports = {
       {
         ottheme: {
           primary: "#936EE3",
-          secondary: "#FF3333",
+          secondary: "#1B2430",
           accent: "#080D33",
           neutral: "#3d4451",
           grey: "#363853",

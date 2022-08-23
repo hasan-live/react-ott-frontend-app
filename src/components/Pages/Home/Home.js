@@ -1,15 +1,21 @@
 import React from 'react';
 import Movies from '../Movies/Movies';
 import Banner from './Banner';
-import Slider from './Slider';
+import MainContent from './MainContent';
+import Sports from './Sports';
+import Trending from './Trending';
+
 
 
 const Home = () => {
     return (
         <>
          <Banner></Banner>
-         <Movies></Movies>
+         <MainContent></MainContent>
+         <Trending></Trending>
         
+         <Sports></Sports>
+         <Movies></Movies>
         </>
     );
 };
