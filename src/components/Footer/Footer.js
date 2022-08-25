@@ -5,12 +5,13 @@ import Footersubscriber from './Footersubscriber';
 import Footerbands from './Footerbands';
 import playicon1 from '../../assets/images/home/footer/playicon1.png';
 import playicon2 from '../../assets/images/home/footer/playicon2.png';
+import footerbg from '../../assets/images/home/footer/footer-app-bg.png';
 
 const Footer = () => {
     return (
         <>
-        <Footerbands/>
-        <Footersubscriber/>
+            <Footerbands />
+            <Footersubscriber />
             <section class="footer px-20 py-10  bg-accent text-base-100">
                 <div className='mx-auto'>
                     <div class="mb-6 md:mb-0">
@@ -35,7 +36,7 @@ const Footer = () => {
                             <span class="sr-only">Facebook page</span>
                         </a>
                         <a href="#" class="text-gray-400 hover:text-red-500 dark:hover:text-white">
-                        <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"></path></svg></a>
+                            <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"></path></svg></a>
                             <span class="sr-only">Youtube account</span>
                         </a>
 
@@ -51,10 +52,10 @@ const Footer = () => {
                             <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd" /></svg>
                             <span class="sr-only">GitHub account</span>
                         </a>
-                    
+
                     </div>
                 </div>
-            
+
                 <div>
                     <span class="footer-title">Quick Links</span>
                     <Link to='/about' class="link link-hover">About us</Link>
@@ -81,6 +82,39 @@ const Footer = () => {
                     <Link to='/about' class="link link-hover">TV Series</Link>
                 </div>
                 <div>
+
+                    <div class="card w-96 bg-white shadow-xl image-full">
+                        <figure><img src={footerbg} alt="Shoes" /></figure>
+                        <div class="card-body px-5">
+                            <div className='text-center text-white'>
+                                <h2 class="card-title text-2xl text-center"> Watch OTT Everywhere & <br />
+                                    Get Unlimited Access </h2>
+                                <p><span className='text-xl font-bold '>Download</span> the App Now </p>
+                            </div>
+
+                            <div class="card-actions flex  justify-center my-10 ">
+                                <div class="flex justify-center my-10 ">
+
+                                </div>
+                                <div class="flex items-center border w-auto rounded-lg px-4 py-2 w-52 mx-2 bg-primary">
+                                    <img src={playicon1} class="w-7 md:w-8" />
+                                    <div class="text-left ml-3">
+                                        <p class='text-xs text-gray-200 uppercase'>Download on the</p>
+                                        <p class="text-sm md:text-base"> Play Store </p>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-center border w-auto rounded-lg px-4 py-2 w-52 mx-2">
+                                    <img src={playicon2} class="w-7 md:w-8" />
+                                    <div class="text-left ml-3">
+                                        <p class='text-xs text-gray-200 uppercase'>Download on the </p>
+                                        <p class="text-sm md:text-base"> Play Store </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                     <div class=" bg-gray-800 rounded-lg">
                         <div class="max-w-xl mx-auto text-white py-10 px-2">
                             <div class="text-center">
