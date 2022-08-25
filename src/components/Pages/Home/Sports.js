@@ -11,29 +11,29 @@ const Sports = () => {
                     </div>
 
                     <div class="flex flex-wrap -m-4 ">
-                            <div class="p-4 lg:w-1/ md:w-1/3 ">
-                                <div class="h-full flex flex-col items-center text-center">
-                                    <figure><img src={sports1} alt="movies" /></figure>
+                        <div class="p-4 lg:w-1/ md:w-1/3 ">
+                            <div class="h-full flex flex-col items-center text-center">
+                                <figure><img src={sports1} alt="movies" /></figure>
 
-                                </div>
                             </div>
-                            <div class="p-4 lg:w-1/ md:w-1/3 ">
-                                <div class="h-full flex flex-col items-center text-center">
-                                    <figure><img src={sports1} alt="movies" /></figure>
-
-                                </div>
-                            </div>
-
-                            <div class="p-4 lg:w-1/ md:w-1/3">
-                                <div class="h-full flex flex-col items-center text-center">
-                                    <figure><img src={sports1} alt="movies" /></figure>
-
-                                </div>
-                            </div>
-
                         </div>
+                        <div class="p-4 lg:w-1/ md:w-1/3 ">
+                            <div class="h-full flex flex-col items-center text-center">
+                                <figure><img src={sports1} alt="movies" /></figure>
+
+                            </div>
+                        </div>
+
+                        <div class="p-4 lg:w-1/ md:w-1/3">
+                            <div class="h-full flex flex-col items-center text-center">
+                                <figure><img src={sports1} alt="movies" /></figure>
+
+                            </div>
+                        </div>
+
                     </div>
-              
+                </div>
+
 
             </section>
         </>
