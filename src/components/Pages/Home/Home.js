@@ -3,6 +3,7 @@ import Movies from '../Movies/Movies';
 import TvShows from '../TvShows/TvShows';
 import AppAds from './AppAds';
 import Banner from './Banner';
+import Slider from './Slider';
 import MainContent from './MainContent';
 import Sports from './Sports';
 import Trending from './Trending';
@@ -14,8 +15,9 @@ const Home = () => {
     return (
         <>
          <Banner></Banner>
-         <MainContent></MainContent>
+         <Slider></Slider>
          <Trending></Trending>
+         <MainContent></MainContent>
          <Sports></Sports>
          <Movies></Movies>
          <TvShows></TvShows>

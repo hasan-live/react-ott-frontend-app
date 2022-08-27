@@ -7,6 +7,8 @@ import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import Home from './components/Pages/Home/Home';
 import Movies from './components/Pages/Movies/Movies';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 
 

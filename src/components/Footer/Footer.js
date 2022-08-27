@@ -84,38 +84,38 @@ const Footer = () => {
                 <div>
 
                     <div class="card w-96 bg-white shadow-xl image-full">
-                        <figure><img src={footerbg} alt="Shoes" /></figure>
-                        <div class="card-body px-5">
+                        <figure><img src={footerbg} alt="card" className='object-cover h-48 w-96' /></figure>
+                        <div class="card-body px-3">
                             <div className='text-center text-white'>
-                                <h2 class="card-title text-2xl text-center"> Watch OTT Everywhere & <br />
+                                <h2 class="card-title text-2xl text-center">Watch OTT Everywhere & <br />
                                     Get Unlimited Access </h2>
                                 <p><span className='text-xl font-bold '>Download</span> the App Now </p>
                             </div>
 
-                            <div class="card-actions flex  justify-center my-10 ">
-                                <div class="flex justify-center my-10 ">
+                            <div class="card-actions flex items-center justify-center ">
+                                <div class="flex justify-center ">
+                                    <div class="flex items-center  w-auto rounded-lg bg-primary px-2">
+                                       <img src={playicon1} class="w-7 md:w-5" />
+                                        <div class="text-left ml-3">
+                                            <p class='text-xs text-white uppercase'>Download on the </p>
+                                            <p class="text-sm text-white"> Play Store </p>
+                                        </div>
+                                    </div>
 
-                                </div>
-                                <div class="flex items-center border w-auto rounded-lg px-4 py-2 w-52 mx-2 bg-primary">
-                                    <img src={playicon1} class="w-7 md:w-8" />
-                                    <div class="text-left ml-3">
-                                        <p class='text-xs text-gray-200 uppercase'>Download on the</p>
-                                        <p class="text-sm md:text-base"> Play Store </p>
+                                    <div class="flex items-center  w-auto rounded-lg bg-neutral px-2 py-2  mx-2">
+                                        <img src={playicon2} class="w-7 md:w-5" />
+                                        <div class="text-left ml-3">
+                                            <p class='text-xs text-white uppercase'>Download on the </p>
+                                            <p class="text-sm text-white"> Play Store </p>
+                                        </div>
                                     </div>
                                 </div>
 
-                                <div class="flex items-center border w-auto rounded-lg px-4 py-2 w-52 mx-2">
-                                    <img src={playicon2} class="w-7 md:w-8" />
-                                    <div class="text-left ml-3">
-                                        <p class='text-xs text-gray-200 uppercase'>Download on the </p>
-                                        <p class="text-sm md:text-base"> Play Store </p>
-                                    </div>
-                                </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class=" bg-gray-800 rounded-lg">
+                    {/* <div class=" bg-gray-800 rounded-lg">
                         <div class="max-w-xl mx-auto text-white py-10 px-2">
                             <div class="text-center">
                                 <h3 class="text-2xl mb-3"> Watch OTT Everywhere & <br />
@@ -139,7 +139,7 @@ const Footer = () => {
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
             </section>
 

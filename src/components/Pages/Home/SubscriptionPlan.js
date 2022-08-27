@@ -7,7 +7,7 @@ const SubscriptionPlan = () => {
         <>
 
 
-            <section class="text-gray-600 body-font">
+           
                 <div class="container px-5 py-24 mx-auto">
                     <div class="flex flex-col text-center w-full mb-20">
 
@@ -46,8 +46,8 @@ const SubscriptionPlan = () => {
                             </div>
                         </div>
 
-                        <div class="p-4 md:w-1/3">
-                            <div class="card  flex-wrap  w-96 bg-white shadow-2xl image-full">
+                        <div class="p-6 md:w-1/3">
+                            <div class="card  flex-wrap ms:w-48 w-96 bg-white shadow-2xl image-full">
                                 <figure><img src={plan3} alt="Shoes" /></figure>
                                 <div class="card-body p-24">
                                     <h2 class="card-title text-2xl">1 month <br />
@@ -63,7 +63,7 @@ const SubscriptionPlan = () => {
 
                     </div>
                 </div>
-            </section>
+         
 
         </>
     );
