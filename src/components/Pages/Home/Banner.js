@@ -4,10 +4,13 @@ import banner1 from '../../../assets/images/home/banner/banner1.png';
 const Banner = () => {
     return (
         <>
-            <div class="hero min-h-screen">
-                <div class="hero-content flex-col lg:flex-row-reverse">
+            <div class="hero mt-12">
+                <div class="container hero-content flex-col lg:flex-row-reverse">
+                    <div className='flex flex1'>
                     <img src={banner1} class="max-w-sm rounded-lg shadow-2xl" />
-                    <div>
+                    </div>
+                   
+                    <div >
                         <breadcrumb class=" px-5 py-3 rounded-md w-full">
                             <ol class="list-reset flex">
                                 <li class="text-gray-500 ">2022.</li>
