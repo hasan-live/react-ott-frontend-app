@@ -15,7 +15,7 @@ const Footer = () => {
             <section class="footer px-20 py-10  bg-accent text-base-100">
                 <div className='mx-auto'>
                     <div class="mb-6 md:mb-0">
-                        <a href="https://flowbite.com/" class="flex items-center">
+                        <a href="#" class="flex items-center">
                             {/* <img src="https://flowbite.com/docs/images/logo.svg" class="mr-3 h-8" alt="FlowBite Logo" />
                              */}
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">

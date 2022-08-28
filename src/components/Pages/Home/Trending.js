@@ -7,7 +7,7 @@ import Slider from "react-slick";
 const Trending = () => {
 
     var settings = {
-        dots: true,
+        dots: false,
         infinite: false,
         speed: 500,
         slidesToShow: 6,

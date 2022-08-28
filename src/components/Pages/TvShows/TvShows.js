@@ -6,7 +6,7 @@ import Slider from "react-slick";
 
 const TvShows = () => {
     var settings = {
-        dots: true,
+        dots: false,
         infinite: false,
         speed: 500,
         slidesToShow: 6,
@@ -44,15 +44,17 @@ const TvShows = () => {
 
     return (
         <>
-            <section class="text-gray-600 ">
-                <div class=" max-width px-5 py-24 mx-auto">
-                    <div class="flex flex-col text-center w-full  items-start mb-3">
-                        <h1 class="text-2xl font-bold  title-font mb-4 text-gray-900 uppercase">Tv Shows</h1>
+            <section class="text-gray-600 py-10">
+                <div class="container max-width px-5   mx-auto">
+                    <div class=" flex flex-col divide-y divide-dashed text-center w-full  items-start mb-3">
+                        <h1 class="text-3xl font-bold  title-font mb-4  text-gray-900 uppercase">Tv Shows</h1>
                     </div>
-                    <div>
-                     
-                        <div class="flex flex-wrap -m-4 "></div>
-                        <Slider {...settings}>
+                </div>
+
+
+                <div>
+                    <div class="flex flex-wrap m-4 "></div>
+                    <Slider {...settings}>
                         <div class="p-4 lg:w-1/6 md:w-1/3 ">
                             <div class="h-full flex flex-col items-center text-center">
                                 <figure><img src={movie1} alt="movies" /></figure>
@@ -269,7 +271,6 @@ const TvShows = () => {
                         </div>
                         <div class="p-4 lg:w-1/6 md:w-1/3">
                             <div class="h-full flex flex-col items-center text-center">
-
                                 <figure><img src={movie3} alt="movies" /></figure>
                                 <div class="w-full">
                                     <h2 class="card-title">
@@ -289,14 +290,15 @@ const TvShows = () => {
                         </div>
 
 
-                        </Slider>
-                        
-                    </div>
+                    </Slider>
                     <div className='mt-24 text-center'>
                         <button class="btn btn-primary text-white  ">View More</button>
 
                     </div>
+
                 </div>
+
+
             </section>
 
 
