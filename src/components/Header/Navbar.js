@@ -30,9 +30,11 @@ const Navbar = () => {
                 <div class="navbar-start">
                     <div class="dropdown">
                         <label tabindex="0" class="btn btn-ghost lg:hidden">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                            <button class="btn btn-square btn-ghost">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-5 h-5 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                            </button>
                         </label>
-                        <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-accent text-base-100 rounded-box w-52">
+                        <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-1 shadow bg-accent text-base-100  w-52">
                             {menuItems}
                         </ul>
                     </div>
@@ -42,7 +44,6 @@ const Navbar = () => {
                         </svg>
                     </button>
                     <a class="btn btn-ghost normal-case text-xl">OTT</a>
-                  
                     <nav >
                         <div class="container flex flex-wrap justify-between items-center mx-auto  ml-3">
                             <div class="hidden relative md:block ">
@@ -50,15 +51,16 @@ const Navbar = () => {
                                     <svg class="w-5 h-5 text-gray-500" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path></svg>
                                     <span class="sr-only">Search icon</span>
                                 </div>
-                                <input type="text" id="search-navbar" class="bg-accent bg-gray-900 block p-2 pl-10 w-full text-gray-900  rounded-lg border border-gray-300 sm:text-sm focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search..." />
+                                <input type="text" id="search-navbar" class="bg-accent bg-gray-900 block p-2 pl-10 w-full text-gray-900  rounded-lg border border-gray-300 sm:text-sm focus:ring-gray-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-gray-500" placeholder="Search..." />
                             </div>
                         </div>
                     </nav>
 
                 </div>
+                
                 <div class="navbar-center hidden lg:flex">
                     <ul class="menu menu-horizontal p-0">
-                    {menuItems}
+                        {menuItems}
                         <button class="btn btn-ghost btn-circle">
                             <div class="indicator">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" /></svg>

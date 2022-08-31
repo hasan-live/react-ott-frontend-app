@@ -7,7 +7,7 @@ import Slider from "react-slick";
 const TvShows = () => {
     var settings = {
         dots: false,
-        infinite: false,
+        infinite: true,
         speed: 500,
         slidesToShow: 6,
         slidesToScroll: 1,

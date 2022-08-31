@@ -9,7 +9,7 @@ const Slider = () => {
         dots: false,
         infinite: true,
         speed: 500,
-        slidesToShow: 1.65,
+        slidesToShow: 1.60,
         slidesToScroll: 1,
         initialSlide: 0,
         autoplay: true,

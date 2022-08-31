@@ -22,3 +22,13 @@ body{
       color: #fff;
     } */
 
+    .slide {
+      
+      transform: scale(.8);
+      transition: .5s;
+    }
+
+    .activeSlide{
+      opacity: 1;
+      transform: scale(1.1);
+    }

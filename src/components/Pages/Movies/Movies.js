@@ -6,7 +6,7 @@ import Slider from "react-slick";
 const Movies = () => {
     var settings = {
         dots: false,
-        infinite: false,
+        infinite: true,
         speed: 500,
         slidesToShow: 6,
         slidesToScroll: 1,
