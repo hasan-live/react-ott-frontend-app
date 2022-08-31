@@ -9,12 +9,12 @@ const Slider = () => {
         dots: false,
         infinite: true,
         speed: 500,
-        slidesToShow: 1.60,
+        slidesToShow: 5,
         slidesToScroll: 1,
         initialSlide: 0,
         autoplay: true,
         autoplaySpeed: 2500,
-        centerPadding: "10px",
+        centerPadding: "60px",
         className: "center",
 
 
