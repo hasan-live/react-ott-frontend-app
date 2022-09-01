@@ -42,11 +42,11 @@ const Movies = () => {
     };
 
     return (
-       
-      <>
-            <section class="text-gray-600 py-5">
-                <div class="container max-width px-5   mx-auto">
-                    <div class=" flex flex-col divide-y divide-dashed text-center w-full  items-start mb-3">
+
+        <>
+            <section class="text-gray-600 py-6">
+                <div class="container max-width px-5  mx-auto">
+                    <div class="flex flex-col divide-y divide-dashed text-center w-full  items-start mb-3">
                         <h1 class="text-3xl font-bold  title-font mb-4  text-gray-900 uppercase">Movies on Sale</h1>
                     </div>
                 </div>
@@ -289,18 +289,10 @@ const Movies = () => {
                             </div>
                         </div>
 
-
                     </Slider>
-                    
-
                 </div>
 
-
             </section>
-
-
-        
-
 
         </>
     );

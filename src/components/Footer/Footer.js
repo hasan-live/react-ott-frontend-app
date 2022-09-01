@@ -11,7 +11,7 @@ const Footer = () => {
     return (
         <>
             <Footerbands />
-            <Footersubscriber />
+           
             <section class="footer px-20 py-10  bg-accent text-base-100">
                 <div className='mx-auto'>
                     <div class="mb-6 md:mb-0">

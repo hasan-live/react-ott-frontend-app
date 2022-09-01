@@ -44,7 +44,7 @@ const TvShows = () => {
 
     return (
         <>
-            <section class="text-gray-600 py-10">
+            <section class="text-gray-600 py-6">
                 <div class="container max-width px-5   mx-auto">
                     <div class=" flex flex-col divide-y divide-dashed text-center w-full  items-start mb-3">
                         <h1 class="text-3xl font-bold  title-font mb-4  text-gray-900 uppercase">Tv Shows</h1>
@@ -291,7 +291,7 @@ const TvShows = () => {
 
 
                     </Slider>
-                    <div className='mt-24 text-center'>
+                    <div className='mt-12 text-center'>
                         <button class="btn btn-primary text-white  ">View More</button>
 
                     </div>

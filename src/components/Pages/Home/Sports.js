@@ -74,11 +74,7 @@ const Sports = () => {
                             ))
                         }
 
-
                     </Slider>
-
-             
-
             </section>
         </>
     );

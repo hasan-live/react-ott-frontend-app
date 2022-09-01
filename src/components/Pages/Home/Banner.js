@@ -4,11 +4,10 @@ import banner1 from '../../../assets/images/home/banner/banner1.png';
 const Banner = () => {
     return (
         <>
-            <div class="mt-6 pb-6 sm:pb-8 lg:pb-12">
+            <div class="mt-4 sm:pb-2 lg:pb-2">
                 <div class="max-w-screen-2xl px-4 md:px-8 mx-auto">
                     <section class="flex flex-col lg:flex-row justify-between gap-6 sm:gap-10 md:gap-16">
                         <div class="xl:w-5/12 flex flex-col justify-center sm:text-center lg:text-left lg:py-12 xl:py-24">
-                        
                             <p class="text-indigo-500 md:text-lg xl:text-xl font-semibold mb-4 md:mb-6">
                             <breadcrumb class=" px-5 py-3 rounded-md w-full">
                             <ol class="list-reset flex">

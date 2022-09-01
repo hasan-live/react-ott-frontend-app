@@ -3,10 +3,8 @@ import appbanner from '../../../assets/images/home/content/app/appbanner.png';
 const AppAds = () => {
     return (
         <>
-            <div class=" relative card w-full h-full">
+            <div class=" relative  w-full h-full">
                 <figure><img src={appbanner} className='' alt="Shoes" /></figure>
-
-               
             </div>
 
 

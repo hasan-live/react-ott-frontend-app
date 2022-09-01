@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import live1 from '../../../assets/images/home/subscription/live/live1.png';
-import live2 from '../../../assets/images/home/subscription/live/live2.png';
 import live3 from '../../../assets/images/home/subscription/live/live3.png';
 import Slider from "react-slick";
 
@@ -50,7 +49,7 @@ const LiveTv = () => {
 
     return (
         <>
-            <div class="container px-5 py-24 mx-auto flex-wrap justify-between items-center">
+            <div class="container px-5 py-6 mx-auto flex-wrap justify-between items-center">
                 <section class="text-gray-600">
                     <div class="container flex flex-wrap px-5 py-12 mx-auto items-center ">
                         <div class="md:w-1/2 md:pr-12  border-gray-200">

@@ -52,7 +52,6 @@ const Trending = () => {
                     </div>
                     </div>
 
-
                     <div>
                         <div class="flex flex-wrap m-4 "></div>
                         <Slider {...settings}>

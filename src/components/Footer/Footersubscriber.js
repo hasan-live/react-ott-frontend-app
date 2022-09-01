@@ -4,10 +4,6 @@ import subscribe from '../../assets/images/home/footer/subscribe.png';
 const Footersubscriber = () => {
     return (
         <>
-
-
-
-        
             <section class="relative overflow-hidden">
                 <div className='container mx-auto flex  py-20 px md:flex-row flex-col items-center'>
                 <img className='absolute inset-0 w-full object-cover h-full  ' src={subscribe} alt=""></img>
