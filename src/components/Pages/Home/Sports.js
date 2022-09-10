@@ -6,7 +6,7 @@ const images = [sports1, sports1, sports1, sports1, sports1];
 
 const Sports = () => {
     var settings = {
-        dots: true,
+        dots: false,
         infinite: true,
         speed: 500,
         slidesToShow: 3,
@@ -23,7 +23,7 @@ const Sports = () => {
                     slidesToShow: 3,
                     slidesToScroll: 3,
                     infinite: true,
-                    dots: true
+                    dots: false
                 }
             },
             {
@@ -38,7 +38,9 @@ const Sports = () => {
                 breakpoint: 480,
                 settings: {
                     slidesToShow: 1,
-                    slidesToScroll: 1
+                    slidesToScroll: 1,
+                   
+
                 }
             }
         ]
@@ -56,19 +58,15 @@ const Sports = () => {
                     </div>
                 </div>
 
-
-               
-                    <div class="flex flex-wrap m-4 "></div>
+                    <div class="flex flex-wrap m-4 rounded"></div>
                     <Slider {...settings}>
                         {
                             images.map((image, index) => (
-                                <div class="p-4 lg:w-1/6 md:w-1/3" key={index}>
-                                    <div class="h-full flex flex-col items-center text-center">
-                                       
+                                <div class="p-2  h-64 grid grid-cols-3 gap-4" key={index}>
+                                    <div class="w-full flex flex-col items-center text-center">
                                             <div className={index == imageIndex ? 'slide activeSlide' : 'slide'}>
-                                            <figure>   <img src={image} alt='image' /> </figure>
+                                            <figure><img src={image} alt='image' /></figure>
                                             </div>
-                                       
                                     </div>
                                 </div>
                             ))

@@ -16,7 +16,6 @@ const SubscriptionPlan = () => {
 
                         <div class=" lg:w-1/3 my-2 md:my-6 ">
                             <div class="shadow-lg border-4 border-solid border-gray text-center max-w-sm mx-auto   transition-colors duration-300">
-
                                 <div class="pricing-amount  p-10 transition-colors duration-300">
                                     <div class=""><span class="text-2xl font-bold">1 month <br />
                                         of premium <br />

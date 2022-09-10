@@ -1,3 +1,4 @@
+
 import logo from './logo.svg';
 import { Routes, Route, Link } from "react-router-dom";
 import './App.css';
@@ -9,6 +10,11 @@ import Home from './components/Pages/Home/Home';
 import Movies from './components/Pages/Movies/Movies';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/effect-coverflow";
+import "swiper/css/pagination";
 
 
 

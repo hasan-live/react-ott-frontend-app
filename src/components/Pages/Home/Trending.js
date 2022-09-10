@@ -45,7 +45,7 @@ const Trending = () => {
 
     return (
         <>
-            <section class="text-gray-600 py-10">
+            <section class="text-gray-600">
                 <div class="container max-width px-5   mx-auto">
                     <div class=" flex flex-col divide-y divide-dashed text-center w-full  items-start mb-3">
                         <h1 class="text-3xl font-bold  title-font mb-4  text-gray-900 uppercase">Trending</h1>
@@ -53,9 +53,9 @@ const Trending = () => {
                     </div>
 
                     <div>
-                        <div class="flex flex-wrap m-4 "></div>
+                        <div class="flex flex-wrap m-2 "></div>
                         <Slider {...settings}>
-                        <div class="p-4 lg:w-1/6 md:w-1/3 ">
+                        <div class="p-2 lg:w-1/6 md:w-1/3 g-2">
                             <div class="h-full flex flex-col items-center text-center">
                                 <figure><img src={movie1} alt="movies" /></figure>
                                 <div class="w-full ">

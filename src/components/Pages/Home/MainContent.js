@@ -7,7 +7,7 @@ import LiveTv from './LiveTv';
 const MainContent = () => {
     return (
         <>
-           <section class="bg-secondary text-base-100 rounded-[50px]">
+           <section class="bg-secondary mt-5 text-base-100 rounded-[50px]">
             <LiveTv></LiveTv>
             <SubscriptionBuy></SubscriptionBuy>
             <SubscriptionPlan></SubscriptionPlan>

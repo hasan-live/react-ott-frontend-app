@@ -10,7 +10,6 @@ const SubscriptionBuy = () => {
         <>
             <div class="container px-5 py-6 mx-auto flex flex-wrap">
                 <div class="flex flex-col text-center w-full mb-20">
-
                     <h1 class="sm:text-3xl text-2xl font-bold title-font mb-4 text-white">Buy Our Subscription Plan Now</h1>
                     <p class="lg:w-2/3 mx-auto leading-relaxed text-base"> to watch your favorite movies and TV shows.</p>
                 </div>

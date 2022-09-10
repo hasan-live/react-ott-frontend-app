@@ -16,7 +16,7 @@ const LiveTv = () => {
         autoplay: true,
         autoplaySpeed: 2000,
         centerMode: true,
-        beforeChange:(current,next)=>setImageIndex(next),
+        beforeChange: (current, next) => setImageIndex(next),
         responsive: [
             {
                 breakpoint: 1024,
@@ -50,33 +50,31 @@ const LiveTv = () => {
     return (
         <>
             <div class="container px-5 py-6 mx-auto flex-wrap justify-between items-center">
-                <section class="text-gray-600">
-                    <div class="container flex flex-wrap px-5 py-12 mx-auto items-center ">
-                        <div class="md:w-1/2 md:pr-12  border-gray-200">
-                            <h1 class="sm:text-3xl text-2xl font-bold title-font mb-2 text-white">Live</h1>
-                            <p class="leading-relaxed text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                tempor incididunt ut labore et dolore magna aliqua.</p>
-                        </div>
-                        <div class="flex md:w-1/2 md:pl-12 mx-auto ">
-                            <div className='flex '>
-                                <a href='#' className='text-white text-center'>More</a>
-                            </div>
-                        </div>
+            
+                <div class="flex justify-between my-5">
+                    <div>
+                        <h1 class="sm:text-3xl text-2xl font-bold title-font mb-2 text-white">Live</h1>
+                        <p class="leading-relaxed text-white text-semibold">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua.</p>
                     </div>
-                </section>
+                    <div>
+                        <a href='#' className='text-white text-2xl text-center text-bold flex items-center '>More<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 ml-2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12.75 15l3-3m0 0l-3-3m3 3h-7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                        </a>
+                    </div>
+                </div>
 
                 <div>
                     <div class="flex flex-wrap m-4 "></div>
                     <Slider {...settings}>
-                        {
+                         {
                             images.map((image, index) => (
-                                <div class="p-4 lg:w-1/6 md:w-1/3" key={index}>
-                                    <div class="h-full flex flex-col items-center text-center">
-                                        <figure>
-                                            <div className={index==imageIndex ? 'slide activeSlide':'slide'}>
-                                            <img src={image} alt='image'/>
+                                <div class="p-2  h-64 grid grid-cols-3 gap-4" key={index}>
+                                    <div class="w-full flex flex-col items-center text-center">
+                                            <div className={index == imageIndex ? 'slide activeSlide' : 'slide'}>
+                                            <figure><img src={image} alt='image' /></figure>
                                             </div>
-                                        </figure>
                                     </div>
                                 </div>
                             ))

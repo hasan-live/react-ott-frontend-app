@@ -10,7 +10,6 @@ import Trending from './Trending';
 import WhatsMovie from './WhatsMovie';
 
 
-
 const Home = () => {
     return (
         <>

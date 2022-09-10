@@ -53,7 +53,7 @@ const TvShows = () => {
 
 
                 <div>
-                    <div class="flex flex-wrap m-4 "></div>
+                    <div class="flex flex-wrap m-4 gap-6 "></div>
                     <Slider {...settings}>
                         <div class="p-4 lg:w-1/6 md:w-1/3 ">
                             <div class="h-full flex flex-col items-center text-center">
