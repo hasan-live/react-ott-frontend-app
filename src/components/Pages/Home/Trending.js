@@ -22,7 +22,7 @@ const Trending = () => {
                     slidesToShow: 3,
                     slidesToScroll: 3,
                     infinite: true,
-                    dots: true
+                    dots: false
                 }
             },
             {
@@ -50,11 +50,11 @@ const Trending = () => {
                     <div class=" flex flex-col divide-y divide-dashed text-center w-full  items-start mb-3">
                         <h1 class="text-3xl font-bold  title-font mb-4  text-gray-900 uppercase">Trending</h1>
                     </div>
-                    </div>
+                </div>
 
-                    <div>
-                        <div class="flex flex-wrap m-2 "></div>
-                        <Slider {...settings}>
+                <div>
+                    <div class="flex flex-wrap m-2 "></div>
+                    <Slider {...settings}>
                         <div class="p-2 lg:w-1/6 md:w-1/3 g-2">
                             <div class="h-full flex flex-col items-center text-center">
                                 <figure><img src={movie1} alt="movies" /></figure>
@@ -288,14 +288,10 @@ const Trending = () => {
                                 </div>
                             </div>
                         </div>
+                    </Slider>
+                </div>
 
-
-                        </Slider>
-                        
-                    </div>
-            
             </section>
-
 
         </>
     );

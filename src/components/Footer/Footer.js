@@ -8,12 +8,12 @@ import FooterTop from './FooterTop';
 const Footer = () => {
     return (
         <>
-
-
-            <Footerbands />
+          
+           <Footerbands />
            <FooterTop/>
             <Footerbottom />
 
+        
         </>
     );
 };

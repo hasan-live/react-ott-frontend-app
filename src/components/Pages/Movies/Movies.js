@@ -20,7 +20,7 @@ const Movies = () => {
                     slidesToShow: 3,
                     slidesToScroll: 3,
                     infinite: true,
-                    dots: true
+                    dots: false
                 }
             },
             {
@@ -50,7 +50,6 @@ const Movies = () => {
                         <h1 class="text-3xl font-bold  title-font mb-4  text-gray-900 uppercase">Movies on Sale</h1>
                     </div>
                 </div>
-
 
                 <div>
                     <div class="flex flex-wrap m-4 "></div>
@@ -154,7 +153,6 @@ const Movies = () => {
                         </div>
                         <div class="p-4 lg:w-1/6 md:w-1/3">
                             <div class="h-full flex flex-col items-center text-center">
-
                                 <figure><img src={movie3} alt="movies" /></figure>
                                 <div class="w-full">
                                     <h2 class="card-title">
@@ -193,7 +191,6 @@ const Movies = () => {
                         </div>
                         <div class="p-4 lg:w-1/6 md:w-1/3">
                             <div class="h-full flex flex-col items-center text-center">
-
                                 <figure><img src={movie2} alt="movies" /></figure>
                                 <div class="w-full">
                                     <h2 class="card-title">
@@ -212,7 +209,6 @@ const Movies = () => {
                         </div>
                         <div class="p-4 lg:w-1/6 md:w-1/3">
                             <div class="h-full flex flex-col items-center text-center">
-
                                 <figure><img src={movie3} alt="movies" /></figure>
                                 <div class="w-full">
                                     <h2 class="card-title">
@@ -232,7 +228,6 @@ const Movies = () => {
                         </div>
                         <div class="p-4 lg:w-1/6 md:w-1/3">
                             <div class="h-full flex flex-col items-center text-center">
-
                                 <figure><img src={movie1} alt="movies" /></figure>
                                 <div class="w-full">
                                     <h2 class="card-title">

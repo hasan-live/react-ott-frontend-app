@@ -7,7 +7,7 @@ const images = [live1, live3, live1, live3, live1, live3];
 
 const LiveTv = () => {
     var settings = {
-        dots: true,
+        dots: false,
         infinite: true,
         speed: 500,
         slidesToShow: 3,
@@ -24,7 +24,7 @@ const LiveTv = () => {
                     slidesToShow: 3,
                     slidesToScroll: 3,
                     infinite: true,
-                    dots: true
+                    dots: false
                 }
             },
             {

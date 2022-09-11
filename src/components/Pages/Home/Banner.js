@@ -14,7 +14,7 @@ const Banner = () => {
                                         <li class="text-gray-500 ">2022.</li>
                                         <li><a href="#" class="text-blue-600 hover:text-blue-700 ml-2 uppercase"> Action</a></li>
                                         <li><span class="text-gray-500 mx-2">/</span></li>
-                                        <li><a href="#" class="text-blue-600 hover:text-blue-700 uppercase">Adventure: </a></li>
+                                        <li><a href="#" class="text-blue-600 hover:text-blue-700 uppercase"> Adventure: </a></li>
                                         <li class="text-gray-500 ml-2"> 2h 13m</li>
                                     </ol>
                                 </breadcrumb >

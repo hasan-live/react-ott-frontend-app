@@ -21,7 +21,7 @@ const TvShows = () => {
                     slidesToShow: 3,
                     slidesToScroll: 3,
                     infinite: true,
-                    dots: true
+                    dots: false
                 }
             },
             {
@@ -50,7 +50,6 @@ const TvShows = () => {
                         <h1 class="text-3xl font-bold  title-font mb-4  text-gray-900 uppercase">Tv Shows</h1>
                     </div>
                 </div>
-
 
                 <div>
                     <div class="flex flex-wrap m-4 gap-6 "></div>

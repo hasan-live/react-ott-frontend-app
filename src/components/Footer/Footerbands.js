@@ -45,7 +45,7 @@ const Footerbands = () => {
     return (
         <>
             <section class="bg-secondary rounded-t-[50px]">
-                <div className='container mx-auto'>
+                <div className='container mx-auto '>
                     <div class="flex flex-wrap m-4 "></div>
                     <Slider {...settings}>
                         {
