@@ -8,6 +8,42 @@ import playfull from '../../../assets/images/home/subscription/play/playfull.png
 const SubscriptionBuy = () => {
     return (
         <>
+            {/* <div class="container px-5 py-6 mx-auto flex flex-wrap">
+                <div class="flex flex-col text-center w-full mb-20">
+                    <h1 class="sm:text-3xl text-2xl font-bold title-font mb-4 text-white">Buy Our Subscription Plan Now</h1>
+                    <p class="lg:w-2/3 mx-auto leading-relaxed text-base"> to watch your favorite movies and TV shows.</p>
+                </div>
+
+                <div class="grid grid-flow-col grid-rows-2 grid-cols-3 gap-6">
+                    <div>
+                        <img src={play2} alt="" loading="lazy" />
+                    </div>
+                    <div class="row-start-1 col-start-2 col-span-2 gap-6">
+                        <img src={play1} alt="" loading="lazy" />
+                    </div>
+                    
+                    <div class="col-start-3">
+                        <img src={playthird1} alt="" loading="lazy" />
+                    </div>
+                    <div>
+                        <img src={playthird1} alt="" loading="lazy" />
+                    </div>
+                    <div>
+                        <img src={playthird1} alt="" loading="lazy" />
+                    </div>
+
+                </div>
+                <div class="flex flex-wrap md:-m-2 ">
+                    <div class="flex -m-4 ">
+                        <div class="p-4 lg:w-1/ md:w-1/1">
+                            <div class="h-full flex flex-col items-center text-center">
+                                <figure><img src={playfull} alt="movies" /></figure>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> */}
+
             <div class="container px-5 py-6 mx-auto flex flex-wrap">
                 <div class="flex flex-col text-center w-full mb-20">
                     <h1 class="sm:text-3xl text-2xl font-bold title-font mb-4 text-white">Buy Our Subscription Plan Now</h1>
@@ -57,7 +93,7 @@ const SubscriptionBuy = () => {
                 </div>
             </div>
 
-           
+          
 
         </>
     );
