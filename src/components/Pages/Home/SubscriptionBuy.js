@@ -49,52 +49,15 @@ const SubscriptionBuy = () => {
                     <h1 class="sm:text-3xl text-2xl font-bold title-font mb-4 text-white">Buy Our Subscription Plan Now</h1>
                     <p class="lg:w-2/3 mx-auto leading-relaxed text-base"> to watch your favorite movies and TV shows.</p>
                 </div>
-                <div class="flex flex-wrap md:-m-2 -m-1 ">
-                    <div class="p-4 lg:w-1/ md:w-2/3  w-2/2 ">
-                        <div class="h-full flex flex-col items-center text-center">
-                            <figure><img src={play1} alt="movies" /></figure>
-                        </div>
-                    </div>
-
-                    <div class="p-4 lg:w-1/ md:w-1/3  w-1/3">
-                        <div class="h-full flex flex-col items-center text-center">
-                            <figure><img src={play2} alt="movies" /></figure>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="flex flex-wrap md:-m-2 -m-1 ">
-                    <div class="flex flex-wrap -m-2">
-                        <div class="p-4 lg:w-1/ md:w-1/3 ">
-                            <div class="h-full flex flex-col items-center text-center">
-                                <figure><img src={playthird1} alt="movies" /></figure>
-                            </div>
-                        </div>
-                        <div class="p-4 lg:w-1/ md:w-1/3 ">
-                            <div class="h-full flex flex-col items-center text-center">
-                                <figure><img src={playthird2} alt="movies" /></figure>
-                            </div>
-                        </div>
-                        <div class="p-4 lg:w-1/ md:w-1/3">
-                            <div class="h-full flex flex-col items-center text-center">
-                                <figure><img src={playthird3} alt="movies" /></figure>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="flex flex-wrap md:-m-2 -m-1">
-                    <div class="flex flex-wrap -m-4 ">
-                        <div class="p-4 lg:w-1/ md:w-1/1 mt-6">
-                            <div class="h-full flex flex-col items-center text-center">
-                                <figure><img src={playfull} alt="movies" /></figure>
-                            </div>
-                        </div>
-                    </div>
+                <div class="grid  gap-6 gap-x-8 gap-y-4  grid-cols-3">
+                    <div class="lg:col-span-2 col-span-3 transition ease-in-out delay-150 bg-text hover:-translate-y-1 hover:scale-105 hover:bg duration-30 "><figure><a href=''><img src={play1} alt='image' className='object-cover' /></a></figure></div>
+                    <div class="lg:col-span-1 col-span-3 transition ease-in-out delay-150 bg-text hover:-translate-y-1 hover:scale-105 hover:bg duration-30"><figure><a href=''><img src={play2} alt='image' /></a></figure></div>
+                    <div class="lg:col-span-1 col-span-3  transition ease-in-out delay-150 bg-text hover:-translate-y-1 hover:scale-105 hover:bg duration-30"><figure><a href=''><img src={playthird1} alt='image' /></a></figure></div>
+                    <div class="lg:col-span-1 col-span-3  transition ease-in-out delay-150 bg-text hover:-translate-y-1 hover:scale-105 hover:bg duration-30"><figure><a href=''><img src={playthird1} alt='image' /></a></figure></div>
+                    <div class="lg:col-span-1 col-span-3 transition ease-in-out delay-150 bg-text hover:-translate-y-1 hover:scale-105 hover:bg duration-30"><figure><a href=''><img src={playthird1} alt='image' /></a></figure></div>
+                    <div class="col-span-3  transition ease-in-out delay-150 bg-text hover:-translate-y-1 hover:scale-105 hover:bg duration-30"><figure><a href=''><img src={playfull} alt='image' /></a></figure></div>
                 </div>
             </div>
-
-          
-
         </>
     );
 };

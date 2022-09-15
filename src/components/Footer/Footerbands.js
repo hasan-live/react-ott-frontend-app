@@ -2,7 +2,7 @@ import React from 'react';
 import Slider from "react-slick";
 import brand1 from '../../assets/images/home/brands/brand1.gif';
 
-const images = [brand1, brand1, brand1, brand1, brand1, brand1,brand1,brand1,brand1,brand1];
+const images = [brand1, brand1, brand1, brand1, brand1, brand1, brand1, brand1, brand1, brand1];
 const Footerbands = () => {
     var settings = {
         dots: false,
@@ -13,7 +13,7 @@ const Footerbands = () => {
         initialSlide: 0,
         autoplay: true,
         autoplaySpeed: 2000,
-        
+
         responsive: [
             {
                 breakpoint: 1024,
@@ -41,7 +41,7 @@ const Footerbands = () => {
             }
         ]
     };
-   
+
     return (
         <>
             <section class="bg-secondary rounded-t-[50px]">
@@ -51,12 +51,16 @@ const Footerbands = () => {
                         {
                             images.map((image, index) => (
                                 <div class="p-4 lg:w-1/2 md:w-1/3" >
-                                    <div class="h-full flex flex-col items-center text-center">
+                                    <div class="h-full flex flex-col items-center text-center transition ease-in-out delay-150 bg-text hover:-translate-y-1 hover:scale-105 hover:bg duration-30">
+
                                         <figure>
                                             <div >
-                                                <img src={image} alt='image'/>
+                                                <a href='#'>
+                                                    <img src={image} alt='image' />
+                                                </a>
                                             </div>
                                         </figure>
+
                                     </div>
                                 </div>
                             ))

@@ -45,13 +45,13 @@ const Navbar = () => {
                     </button>
                     <a class="btn btn-ghost normal-case text-xl">OTT</a>
                     <nav >
-                        <div class="container flex flex-wrap justify-between items-center mx-auto  ml-3">
+                        <div class="container flex flex-wrap justify-between items-center mx-auto  ml-7">
                             <div class="hidden relative md:block ">
                                 <div class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
-                                    <svg class="w-5 h-5 text-gray-500" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path></svg>
+                                    <svg class="w-5 h-5 text-gray" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path></svg>
                                     <span class="sr-only">Search icon</span>
                                 </div>
-                                <input type="text" id="search-navbar" class="bg-accent bg-gray-900 block p-2 pl-10 w-full text-gray-900  rounded-lg border border-gray-300 sm:text-sm focus:ring-gray-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-gray-500" placeholder="Search..." />
+                                <input type="text" id="search-navbar" class=" bg-gray-900 block p-2 pl-10 w-full text-white  rounded-lg border border-gray-300 sm:text-sm focus:ring-gray-500 focus:border-gray-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-gray dark:focus:ring-gray-500 dark:focus:border-gray-500" placeholder="Search..." />
                             </div>
                         </div>
                     </nav>
@@ -74,9 +74,9 @@ const Navbar = () => {
                         <path stroke-linecap="round" stroke-linejoin="round" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1" />
                     </svg></a>
 
-                    <button class="btn btn-ghost btn-circle">
+                    <button class="btn btn-primary ml-3 ">
                         <div class="indicator">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="gray" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
                             </svg>
                         </div>

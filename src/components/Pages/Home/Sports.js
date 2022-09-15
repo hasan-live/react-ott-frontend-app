@@ -39,7 +39,7 @@ const Sports = () => {
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1,
-                   
+
 
                 }
             }
@@ -54,25 +54,26 @@ const Sports = () => {
             <section class="text-gray-600 py-10">
                 <div class="container max-width px-5   mx-auto">
                     <div class=" flex flex-col divide-y divide-dashed text-center w-full  items-start mb-3">
-                        <h1 class="text-3xl font-bold  title-font mb-4  text-gray-900 uppercase">Tv Shows</h1>
+                        <h1 class="text-3xl font-bold  title-font mb-4  text-gray-900 uppercase">Sports</h1>
                     </div>
                 </div>
 
-                    <div class="flex flex-wrap m-4 rounded"></div>
-                    <Slider {...settings}>
-                        {
-                            images.map((image, index) => (
-                                <div class="p-2  h-64 grid grid-cols-3 gap-4" key={index}>
-                                    <div class="w-full flex flex-col items-center text-center">
-                                            <div className={index == imageIndex ? 'slide activeSlide' : 'slide'}>
-                                            <figure><img src={image} alt='image' /></figure>
-                                            </div>
+                <div class="flex flex-wrap m-4 rounded"></div>
+                <Slider {...settings}>
+                    {
+                        images.map((image, index) => (
+                            <div class="p-2  h-64 grid grid-cols-3 gap-4" key={index}>
+                                <div class="w-full flex flex-col items-center text-center">
+                                    <div className={index == imageIndex ? 'slide activeSlide' : 'slide'}>
+                                        <figure className='transition ease-in-out delay-150 bg-text hover:-translate-y-1 hover:scale-110 hover:bg duration-30'><a href=''><img src={image} alt='image' /></a></figure>
                                     </div>
                                 </div>
-                            ))
-                        }
+                            </div>
+                        ))
+                    }
 
-                    </Slider>
+                </Slider>
+
             </section>
         </>
     );

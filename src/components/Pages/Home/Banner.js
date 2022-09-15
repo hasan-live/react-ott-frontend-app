@@ -6,22 +6,22 @@ const Banner = () => {
     return (
         <>
             <section class="text-gray-600 body-font">
-                <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+                <div class="container mx-auto flex px-5 py-12 md:flex-row flex-col items-center">
                     <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
                     <p class="text-indigo-500 md:text-lg xl:text-xl font-semibold mb-4 md:mb-6">
                                 <breadcrumb class="py-3 rounded-md w-full">
                                     <ol class="list-reset flex">
                                         <li class="text-gray-500 ">2022.</li>
-                                        <li><a href="#" class="text-blue-600 hover:text-blue-700 ml-2 uppercase"> Action</a></li>
+                                        <li><a href="#" class="text-blue-600 hover:text-block ml-2 uppercase"> Action</a></li>
                                         <li><span class="text-gray-500 mx-2">/</span></li>
-                                        <li><a href="#" class="text-blue-600 hover:text-blue-700 uppercase"> Adventure: </a></li>
+                                        <li><a href="#" class="text-blue-600 hover:text-block uppercase"> Adventure: </a></li>
                                         <li class="text-gray-500 ml-2"> 2h 13m</li>
                                     </ol>
                                 </breadcrumb >
                             </p>
 
                             <h1 class="text-4xl font-bold uppercase">Thor: Love and Thunder</h1>
-                            <p class="py-6 font-normal">Thor: Love and Thunder is an upcoming American superhero
+                            <p class="py-6 font-leading-7 break-words">Thor: Love and Thunder is an upcoming American superhero
                                 film based on the Marvel Comics character Thor, produced by
                                 Marvel Studios and distributed by Walt Disney Studios Motion
                                 Pictures. It is intended to be the direct sequel to Thor: Ragnarok and the 29th film in the Marvel Cinematic Universe.</p>
@@ -36,7 +36,7 @@ const Banner = () => {
 
                             </div>
                     </div>
-                    <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+                    <div class="lg:max-w-lg lg:w-full md:w-2/2 w-6/6">
                     <EffectOverflow></EffectOverflow>
                         {/* <img class="object-cover object-center rounded" alt="hero" src={banner1} /> */}
                     </div>

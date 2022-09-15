@@ -1,11 +1,13 @@
 import React from 'react';
 import appbanner from '../../../assets/images/home/content/app/appbanner.png';
+import addslogo from '../../../assets/images/home/content/app/addslogo.png';
+import adds2 from '../../../assets/images/home/content/app/adds2.png';
 const AppAds = () => {
     return (
         <>
-            <div class=" relative  w-full h-full">
+            {/* <div class=" relative  w-full h-full">
                 <figure><img src={appbanner} className='' alt="Shoes" /></figure>
-            </div>
+            </div> */}
 
 
             {/* <section class="min-h-screen bg-cover " style="background-image: url('https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80')">
@@ -135,6 +137,108 @@ const AppAds = () => {
 
                 </figure>
             </section> */}
+            {/* 
+            <div class="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-3 xl:grid-cols-1 gap-0 w-full h-full">
+                <div class="relative overflow-hidden rounded-lg shadow-lg cursor-pointer">
+                    <img class="object-cover w-full h-full" src={appbanner} alt="Flower and sky" />
+
+                    <div class="absolute top-0 left-0 px-6 py-4">
+
+                        <div class="hero bg-base-100">
+                            <div class="flex items-center justify-start">
+                                <div class="text-center lg:text-left">
+                                    
+                                </div>
+                                <div class="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
+                                    <div class="card-body">
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div> */}
+
+            <section class="relative">
+                <div class="absolute inset-0 bg-gray-300">
+                    <img class="object-cover w-full h-full" src={appbanner} alt="Flower and sky" />
+                </div>
+                <div class="container px-5 py-24 mx-auto flex">
+                    <div class="lg:w-1/2 md:w-1/2 bg-cyan-500 rounded-lg p-10 xl:p-24  flex flex-col md:ml-auto w-full mt-0 md:mt-0 relative z-10 ">
+                        <div class="flex justify-between ">
+
+                            <div className='flex justify-center items-center'>
+                                <>
+                                <div className="avatar">
+                                    <div className="w-24  rounded shadow-xl">
+                                        <img src={addslogo} className='border-8 border-text-white'/>
+                                    </div>
+                                </div>
+                                </>
+                                <div className='lg:ml-4 ml-3 text-block text-3xl '>
+                                    <div className='text-white-700 text-sm lg:text-xl font-bold uppercase'>OTT App</div>
+                                    <div>
+                                        <div className='ml-0 text-white text-sm lg:text-xl '>
+                                            <div className='flex'>
+                                                <div class="flex gap-0.5 -ml-1">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" class="w-4 lg:w-6 h-4 lg:h-6 text-yellow-400" viewBox="0 0 20 20" fill="currentColor">
+                                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                                    </svg>
+
+                                                    <svg xmlns="http://www.w3.org/2000/svg" class="w-4 lg:w-6 h-4 lg:h-6 text-yellow-400" viewBox="0 0 20 20" fill="currentColor">
+                                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                                    </svg>
+
+                                                    <svg xmlns="http://www.w3.org/2000/svg" class="w-4 lg:w-6 h-4 lg:h-6 text-yellow-400" viewBox="0 0 20 20" fill="currentColor">
+                                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                                    </svg>
+
+                                                    <svg xmlns="http://www.w3.org/2000/svg" class="w-4 lg:w-6 h-4 lg:h-6 text-yellow-400" viewBox="0 0 20 20" fill="currentColor">
+                                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                                    </svg>
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div >
+                                </div>
+                            </div>
+
+
+                            <div class="w-24">
+                                <img className="" src={adds2} />
+                            </div>
+                        </div>
+
+                        <div class="p-4 w-full text-center rounded-lg ">
+                            <div className='mt-6'>
+                                <p class="mb-5 text-base text-white sm:text-lg dark:text-gray-400">Stay up to date and move work forward<br />  with Flowbite on iOS &amp;  Android. <br /> Download the app today.</p>
+                                <h5 class="mb-2 text-3xl font-bold text-white dark:text-white uppercase"> <span className='text-2xl text-gray-800'>Download</span> The APP</h5>
+                            </div>
+                            <div class="justify-center items-center space-y-4 sm:flex sm:space-y-0 sm:space-x-4 mt-10">
+                                <a href="#" class="w-full sm:w-auto bg-gray-800 hover:bg-gray-700 focus:ring-4 focus:outline-none focus:ring-gray-300 text-white rounded-lg inline-flex items-center justify-center px-4 py-2.5 dark:bg-gray-700 dark:hover:bg-gray-600 dark:focus:ring-gray-700">
+                                    <svg class="mr-3 w-7 h-7" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="apple" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path fill="currentColor" d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"></path></svg>
+                                    <div class="text-left">
+                                        <div class="mb-1 text-xs">Download on the</div>
+                                        <div class="-mt-1 font-sans text-sm font-semibold">App Store</div>
+                                    </div>
+                                </a>
+                                <a href="#" class="w-full sm:w-auto bg-gray-800 hover:bg-gray-700 focus:ring-4 focus:outline-none focus:ring-gray-300 text-white rounded-lg inline-flex items-center justify-center px-4 py-2.5 dark:bg-gray-700 dark:hover:bg-gray-600 dark:focus:ring-gray-700">
+                                    <svg class="mr-3 w-7 h-7" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="google-play" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M325.3 234.3L104.6 13l280.8 161.2-60.1 60.1zM47 0C34 6.8 25.3 19.2 25.3 35.3v441.3c0 16.1 8.7 28.5 21.7 35.3l256.6-256L47 0zm425.2 225.6l-58.9-34.1-65.7 64.5 65.7 64.5 60.1-34.1c18-14.3 18-46.5-1.2-60.8zM104.6 499l280.8-161.2-60.1-60.1L104.6 499z"></path></svg>
+                                    <div class="text-left">
+                                        <div class="mb-1 text-xs">Download in on the</div>
+                                        <div class="-mt-1 font-sans text-sm font-semibold">Google Play</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
         </>
     );
 };

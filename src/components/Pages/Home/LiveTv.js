@@ -50,7 +50,7 @@ const LiveTv = () => {
     return (
         <>
             <div class="container px-5 py-6 mx-auto flex-wrap justify-between items-center">
-            
+
                 <div class="flex justify-between my-5">
                     <div>
                         <h1 class="sm:text-3xl text-2xl font-bold title-font mb-2 text-white">Live</h1>
@@ -68,13 +68,13 @@ const LiveTv = () => {
                 <div>
                     <div class="flex flex-wrap m-4 "></div>
                     <Slider {...settings}>
-                         {
+                        {
                             images.map((image, index) => (
                                 <div class="p-2  h-64 grid grid-cols-3 gap-4" key={index}>
                                     <div class="w-full flex flex-col items-center text-center">
-                                            <div className={index == imageIndex ? 'slide activeSlide' : 'slide'}>
-                                            <figure><img src={image} alt='image' /></figure>
-                                            </div>
+                                        <div className={index == imageIndex ? 'slide activeSlide' : 'slide'}>
+                                            <figure className='transition ease-in-out delay-150 bg-text hover:-translate-y-1 hover:scale-110 hover:bg duration-30'><a href=''><img src={image} alt='image' /></a></figure>
+                                        </div>
                                     </div>
                                 </div>
                             ))

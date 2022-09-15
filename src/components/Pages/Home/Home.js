@@ -8,6 +8,7 @@ import MainContent from './MainContent';
 import Sports from './Sports';
 import Trending from './Trending';
 import WhatsMovie from './WhatsMovie';
+import MoviesSale from '../MoviesSale/MoviesSale';
 
 
 const Home = () => {
@@ -17,6 +18,7 @@ const Home = () => {
          <Slider></Slider>
          <Trending></Trending>
          <MainContent></MainContent>
+         <MoviesSale></MoviesSale>
          <Sports></Sports>
          <Movies></Movies>
          <TvShows></TvShows>

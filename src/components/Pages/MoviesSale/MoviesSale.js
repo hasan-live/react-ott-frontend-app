@@ -7,7 +7,7 @@ import Slider from "react-slick";
 const images = [movie1, movie2, movie3, movie1, movie2, movie3, movie1, movie2, movie3];
 
 
-const Movies = () => {
+const MoviesSale = () => {
 
     var settings = {
         infinite: true,
@@ -47,10 +47,10 @@ const Movies = () => {
 
     return (
         <>
-            <section class="text-gray-600 py-6 mt-6">
+            <section class="text-gray-600 my-6 mt-12">
                 <div class="container max-width px-5 mx-auto">
-                    <div class=" flex flex-col divide-y divide-dashed text-center w-full  items-start mb-3">
-                        <h1 class="text-3xl font-bold  title-font mb-4  text-gray-900 uppercase">Movies </h1>
+                    <div class=" flex flex-col divide-y divide-dashed text-center w-full  items-start mb-2">
+                        <h1 class="text-3xl font-bold  title-font mb-4  text-gray-900 uppercase">Movies on Sale</h1>
                     </div>
                 </div>
 
@@ -59,7 +59,7 @@ const Movies = () => {
                     {
 
                         images.map((image, index) => (
-                            <div class="p-2 lg:w-1/4 md:w-1/3 p-6">
+                            <div class="p-2 lg:w-1/4 md:w-1/3 ">
                                 <div className=' key={index}'>
                                 <div className='relative  brightness-100 hover:brightness-60 '>
                                         <a href="#" class="group h-96 md:h-62 block  rounded-lg overflow-hidden shadow-lg relative mb-2 lg:mb-3 brightness-100 hover:brightness-50">
@@ -111,4 +111,4 @@ const Movies = () => {
     );
 };
 
-export default Movies;
+export default MoviesSale;

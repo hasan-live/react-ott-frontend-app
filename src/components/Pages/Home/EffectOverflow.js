@@ -40,7 +40,7 @@ const EffectOverflow = () => {
                 className="mySwiper swiper-container"
             >
                 <div className='container'>
-                    <div className='flex flex-wrap'>
+                    <div className='flex'>
                        {  
                        images.map((image) => (
                          <SwiperSlide>
