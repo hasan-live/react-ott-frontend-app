@@ -48,23 +48,23 @@ const Slider = () => {
 
     return (
         <>
-            <section class="text-gray-600 py-3">
-                <div class="mx-auto">
+            <section className="text-gray-600 py-2">
+                <div className="mx-auto">
                     <SliderReact {...settings}>
                         {
                             images.map((image) => (
 
-                                <div class="grid grid-rows-6 grid-flow-col gap-8">
-                                    <a href="#" class="group h-56   flex items-end   mt-8 overflow-hidden  relative p-8 rounded-lg ">
-                                        <img src={image} loading="lazy" alt="slider" class="  object-cover object-center absolute inset-0 group-hover:scale-105 transition duration-50" />
-                                        <div class="bg-gradient-to-t from-red-500 via-transparent to-transparent opacity-800 absolute  pointer-events-none"></div>
+                                <div className="lg:w-1/6 md:w-1/4 gap-2">
+                                    <a href="#" className="group h-56   flex items-end   mt-8 overflow-hidden  relative p-8 rounded-lg ">
+                                        <img src={image} loading="lazy" alt="slider" className="  object-cover object-center absolute inset-0 group-hover:scale-105 transition duration-50" />
+                                        <div className="bg-gradient-to-t from-red-500 via-transparent to-transparent opacity-800 absolute  pointer-events-none"></div>
 
-                                        <div class="flex relative  md: justify-end sm:justify-center md:justify-end lg:justify-between xl:justify-around">
-                                            <div class="flex">
+                                        <div className="flex relative  md: justify-end sm:justify-center md:justify-end lg:justify-between xl:justify-around">
+                                            <div className="flex">
                                                 <p>
-                                                    <div class="flex gap-1.0 -ml-3 mt-[9]">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 text-white">
-                                                            <path stroke-linecap="round" stroke-linejoin="round" d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.348a1.125 1.125 0 010 1.971l-11.54 6.347a1.125 1.125 0 01-1.667-.985V5.653z" />
+                                                    <div className="flex gap-1.0 -ml-3 mt-[9]">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-8 h-8 text-white">
+                                                            <path strokeLinecap="round" strokeLinejoin="round" d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.348a1.125 1.125 0 010 1.971l-11.54 6.347a1.125 1.125 0 01-1.667-.985V5.653z" />
                                                         </svg>
                                                         <span className='text-white text-xl text-bold'>English</span>
                                                     </div>

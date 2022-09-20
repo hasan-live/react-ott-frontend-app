@@ -12,8 +12,6 @@ const Footer = () => {
            <Footerbands />
            <FooterTop/>
             <Footerbottom />
-
-        
         </>
     );
 };

@@ -1,10 +1,22 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import sports1 from '../../../assets/images/home/sports/sports1.png';
 import Slider from "react-slick";
 
 const images = [sports1, sports1, sports1, sports1, sports1];
 
+
 const Sports = () => {
+
+    const [sports, setSports] = useState([]);
+
+    useEffect(() => {
+        fetch('http://159.223.86.243/api/v1/sub-categories')
+            .then(Response => Response.json())
+            .then(data => setSports(data.data))
+    }, []);
+
+
+
     var settings = {
         dots: false,
         infinite: true,
@@ -40,7 +52,6 @@ const Sports = () => {
                     slidesToShow: 1,
                     slidesToScroll: 1,
 
-
                 }
             }
         ]
@@ -50,20 +61,44 @@ const Sports = () => {
 
     return (
         <>
+            <h2>All Category: {sports.length} </h2>
 
-            <section class="text-gray-600 py-10">
-                <div class="container max-width px-5   mx-auto">
-                    <div class=" flex flex-col divide-y divide-dashed text-center w-full  items-start mb-3">
-                        <h1 class="text-3xl font-bold  title-font mb-4  text-gray-900 uppercase">Sports</h1>
+            {
+                sports.map(sport =>
+                    console.log(sport)
+                )
+            }
+
+            {
+                sports.map(sport =>
+                    <div className="card" key={sport.id}>
+
+                        <div className="card-body">
+                            <h2>{sport.title}</h2>
+
+                            <figure className=''><a href=''><img src={sport.image} alt='image' /></a></figure>
+
+                        </div>
+                    </div>
+                )
+
+
+
+            }
+
+            <section className="text-gray-600 py-10">
+                <div className="container max-width px-5   mx-auto">
+                    <div className=" flex flex-col divide-y divide-dashed text-center w-full  items-start mb-3">
+                        <h1 className="text-3xl font-bold  title-font mb-4  text-gray-900 uppercase">Sports</h1>
                     </div>
                 </div>
 
-                <div class="flex flex-wrap m-4 rounded"></div>
+                <div className="flex flex-wrap m-4 rounded"></div>
                 <Slider {...settings}>
                     {
                         images.map((image, index) => (
-                            <div class="p-2  h-64 grid grid-cols-3 gap-4" key={index}>
-                                <div class="w-full flex flex-col items-center text-center">
+                            <div className="p-2  h-64 grid grid-cols-3 gap-4" key={index}>
+                                <div className="w-full flex flex-col items-center text-center">
                                     <div className={index == imageIndex ? 'slide activeSlide' : 'slide'}>
                                         <figure className='transition ease-in-out delay-150 bg-text hover:-translate-y-1 hover:scale-110 hover:bg duration-30'><a href=''><img src={image} alt='image' /></a></figure>
                                     </div>
