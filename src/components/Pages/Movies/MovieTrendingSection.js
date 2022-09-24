@@ -8,19 +8,19 @@ import axios from 'axios';
 const images = [movie1, movie2, movie3, movie1, movie2, movie3, movie1, movie2, movie3];
 
 
-const TvShows = () => {
+const MovieTrendingSection = () => {
 
-    const [movTvShows, setMovTvShows] = useState([]);
+    const [movTrandings, setMovTrandings] = useState([]);
     const [isError, setIsError] = useState("");
 
-
+   
 
     // using Async Await
     const getMyPostData = async () => {
-
+        
         try {
             const res = await axios.get("http://159.223.86.243/api/v1/frontend/custom/sections");
-            setMovTvShows(res.data.data[4].frontend_custom_content_limited_data);
+            setMovTrandings(res.data.data[0].frontend_custom_content_limited_data);
         } catch (error) {
             setIsError(error.message);
         }
@@ -73,7 +73,7 @@ const TvShows = () => {
             <section className="text-gray-600 py-6 mt-5 ">
                 <div className="container max-width px-5 mx-auto">
                     <div className=" flex flex-col divide-y divide-dashed text-center w-full  items-start mb-3">
-                        <h1 className="text-3xl font-bold  title-font mb-4  text-gray-900 uppercase">TV Show </h1>
+                        <h1 className="text-3xl font-bold  title-font mb-4  text-gray-900 uppercase">Trending </h1>
                     </div>
                 </div>
 
@@ -82,13 +82,13 @@ const TvShows = () => {
 
                     {
 
-                        movTvShows.map((movTvShow, index) => (
+                        movTrandings.map((movTranding, index) => (
                             <div className=" lg:w-1/6 md:w-1/4 p-4">
                                 <div className=' key={index}'>
                                     <div className='relative  brightness-100 hover:brightness-60 '>
                                         <a href="#" className="group h-92 md:h-92 block  rounded-lg overflow-hidden shadow-lg relative mb-2 lg:mb-3 brightness-100 hover:brightness-50">
-                                            <img src={movTvShow.ott_content.poster} loading="lazy" alt="Movie" className="h-72 w-72  object-center group-hover:scale-105 transition duration-200" />
-                                            <span className="bg-red-500 text-white text-sm  font-bold uppercase rounded-br-lg absolute left-0 top-10 px-3 py-1.5 hover:opacity-0">{movTvShow.ott_content.access}</span>
+                                            <img src={movTranding.ott_content.poster} loading="lazy" alt="Movie" className="h-72 w-72  object-center group-hover:scale-105 transition duration-200"  />
+                                            <span className="bg-red-500 text-white text-sm  font-bold uppercase rounded-br-lg absolute left-0 top-10 px-3 py-1.5 hover:opacity-0">{movTranding.ott_content.access}</span>
 
                                             <div className="absolute top-0 left-0  w-full h-full flex justify-center items-center opacity-0 hover:opacity-1 hover:opacity-100  hover:brightness-100 ">
                                                 <a href='#' className="relative flex items-center justify-center  w-min flex-shrink-0 p-2 text-center text-primary  rounded-full group-hover:primary text-white text-5xl bg-primary group-hover:stroke-white" >
@@ -101,8 +101,8 @@ const TvShows = () => {
                                     </div>
                                     <div className="flex justify-between items-start gap-2 px-2">
                                         <div className="flex flex-col">
-                                            <a href="#" className="text-gray-800 hover:text-gray-500 text-lg lg:text-xl font-bold transition duration-100">{movTvShow.ott_content.title}</a>
-
+                                        <a href="#" className="text-gray-800 hover:text-gray-500 text-lg lg:text-xl font-bold transition duration-100">{movTranding.ott_content.title}</a>
+                               
                                             <p className='flex items-start m-1'>2018 <span className='ml-2'>2h 3m</span></p>
                                             <p>
                                                 <div className="flex gap-0.5 -ml-1">
@@ -136,4 +136,4 @@ const TvShows = () => {
     );
 };
 
-export default TvShows;
+export default MovieTrendingSection;

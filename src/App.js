@@ -10,11 +10,12 @@ import Home from './components/Pages/Home/Home';
 import Movies from './components/Pages/Movies/Movies';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
+import axios from 'axios';
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
+import Blogs from './components/Pages/Blogs';
 
 
 
@@ -26,6 +27,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="about" element={<About />} />
         <Route path="movies" element={<Movies />} />
+        <Route path="blogs" element={<Blogs />} />
       </Routes>
       <Footer/>
     </div>

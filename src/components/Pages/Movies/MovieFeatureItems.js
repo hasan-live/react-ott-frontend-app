@@ -1,11 +1,10 @@
 import React, { useEffect, useState } from 'react';
-import sports1 from '../../../assets/images/home/sports/sports1.png';
+import Feature1 from '../../../assets/images/Movies/MovieFeature1.png';
 import Slider from "react-slick";
 
-const images = [sports1, sports1, sports1, sports1, sports1];
+const images = [Feature1, Feature1, Feature1, Feature1, Feature1];
 
-
-const Sports = () => {
+const MovieFeatureItems = () => {
 
     var settings = {
         dots: false,
@@ -17,7 +16,7 @@ const Sports = () => {
         autoplay: true,
         autoplaySpeed: 2000,
         centerMode: true,
-        beforeChange: (current, next) => setImageIndex(next),
+
         responsive: [
             {
                 breakpoint: 1024,
@@ -47,8 +46,6 @@ const Sports = () => {
         ]
     };
 
-    const [imageIndex, setImageIndex] = useState(0);
-
     return (
         <>
             <section className="text-gray-600 py-10">
@@ -59,12 +56,13 @@ const Sports = () => {
                 </div>
 
                 <div className="flex flex-wrap m-4 rounded"></div>
+
                 <Slider {...settings}>
                     {
-                        images.map((image, index) => (
-                            <div className="p-2  h-64 grid grid-cols-3 gap-4" key={index}>
+                        images.map((image) => (
+                            <div className="p-2  h-64 grid grid-cols-3 gap-6" >
                                 <div className="w-full flex flex-col items-center text-center">
-                                    <div className={index == imageIndex ? 'slide activeSlide' : 'slide'}>
+                                    <div >
                                         <figure className='transition ease-in-out delay-150 bg-text hover:-translate-y-1 hover:scale-110 hover:bg duration-30'><a href=''><img src={image} alt='image' /></a></figure>
                                     </div>
                                 </div>
@@ -79,4 +77,4 @@ const Sports = () => {
     );
 };
 
-export default Sports;
+export default MovieFeatureItems;
