@@ -1,23 +1,26 @@
 import React from 'react';
-import Movies from '../Movies/Movies';
+
 import TvShows from '../TvShows/TvShows';
 import AppAds from './AppAds';
 import Banner from './Banner';
-import Slider from './Slider';
+
 import MainContent from './MainContent';
 import Sports from './Sports';
-import Trending from './Trending';
+
 import WhatsMovie from './WhatsMovie';
 import MoviesSale from '../MoviesSale/MoviesSale';
 import MovieSection from '../Movies/MovieSection';
 import MovieTrendingSection from '../Movies/MovieTrendingSection';
+import AllSubCategories from './AllSubCategories';
+import HomeSlider from './HomeSlider';
 
 
 const Home = () => {
     return (
         <>
          <Banner></Banner>
-         <Slider></Slider>
+         <HomeSlider></HomeSlider>
+         <AllSubCategories></AllSubCategories>
          <MovieTrendingSection></MovieTrendingSection>
          <MainContent></MainContent>
          <MoviesSale></MoviesSale>

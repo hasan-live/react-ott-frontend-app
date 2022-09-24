@@ -6,7 +6,7 @@ import SliderReact from "react-slick";
 const images = [slider1, slider2, slider3, slider1, slider2, slider3, slider1, slider2, slider3];
 
 
-const Slider = () => {
+const AllSubCategories = () => {
 
     var settings = {
         infinite: true,
@@ -88,4 +88,4 @@ const Slider = () => {
     );
 };
 
-export default Slider;
+export default AllSubCategories;
