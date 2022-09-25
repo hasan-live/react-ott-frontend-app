@@ -4,7 +4,7 @@ import EffectOverflow from './EffectOverflow';
 import SliderReact from "react-slick";
 import axios from 'axios';
 
-const HomeSlider = () => {
+const TestSlider = () => {
 
     const [movTvShows, setMovTvShows] = useState([]);
     const [isError, setIsError] = useState("");
@@ -67,22 +67,10 @@ const HomeSlider = () => {
 
     return (
         <>
-         <section className="text-gray-600 body-font">
-         <SliderReact {...settings}>
-         {
-           
-                movTvShows.map((movTvShow) => (
-                    <div className="carousel w-full ">
-                        <div id="item1" className="carousel-item w-full">
-                            <img src={movTvShow.image} className="w-full h-full" />
-                        </div>
-                    </div>
-                ))
-            }
-            </SliderReact>
-            </section>
+         
+        
 
-            {/* <section className="text-gray-600 body-font">
+            <section className="text-gray-600 body-font">
                 <SliderReact {...settings}>
                     {
                         movTvShows.map((movTvShow, index) => (
@@ -121,10 +109,10 @@ const HomeSlider = () => {
                         ))
                     }
                 </SliderReact>
-            </section> */}
+            </section>
 
         </>
     );
 };
 
-export default HomeSlider;
+export default TestSlider;

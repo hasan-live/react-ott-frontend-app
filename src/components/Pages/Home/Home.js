@@ -13,24 +13,27 @@ import MovieSection from '../Movies/MovieSection';
 import MovieTrendingSection from '../Movies/MovieTrendingSection';
 import AllSubCategories from './AllSubCategories';
 import HomeSlider from './HomeSlider';
+import TestSlider from './TestSlider';
 
 
 const Home = () => {
     return (
         <>
-         <Banner></Banner>
-         <HomeSlider></HomeSlider>
-         <AllSubCategories></AllSubCategories>
-         <MovieTrendingSection></MovieTrendingSection>
-         <MainContent></MainContent>
-         <MoviesSale></MoviesSale>
-         <Sports></Sports>
-         <MovieSection></MovieSection>
-         <TvShows></TvShows>
-         <AppAds></AppAds>
-         <WhatsMovie></WhatsMovie>
-        
-      
+            <HomeSlider></HomeSlider>
+            <Banner></Banner>
+            <TestSlider></TestSlider>
+
+            <AllSubCategories></AllSubCategories>
+            <MovieTrendingSection></MovieTrendingSection>
+            <MainContent></MainContent>
+            <MoviesSale></MoviesSale>
+            <Sports></Sports>
+            <MovieSection></MovieSection>
+            <TvShows></TvShows>
+            <AppAds></AppAds>
+            <WhatsMovie></WhatsMovie>
+
+
         </>
     );
 };

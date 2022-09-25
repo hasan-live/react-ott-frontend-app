@@ -83,11 +83,11 @@ const TvShows = () => {
                     {
 
                         movTvShows.map((movTvShow, index) => (
-                            <div className=" lg:w-1/6 md:w-1/4 p-4">
+                            <div className=" lg:w-1/6 md:w-1/4 p-3">
                                 <div className=' key={index}'>
                                     <div className='relative  brightness-100 hover:brightness-60 '>
                                         <a href="#" className="group h-92 md:h-92 block  rounded-lg overflow-hidden shadow-lg relative mb-2 lg:mb-3 brightness-100 hover:brightness-50">
-                                            <img src={movTvShow.ott_content.poster} loading="lazy" alt="Movie" className="h-72 w-72  object-center group-hover:scale-105 transition duration-200" />
+                                            <img src={movTvShow.ott_content.poster} loading="lazy" alt="Movie" className="h-72 w-82  object-center group-hover:scale-105 transition duration-200" />
                                             <span className="bg-red-500 text-white text-sm  font-bold uppercase rounded-br-lg absolute left-0 top-10 px-3 py-1.5 hover:opacity-0">{movTvShow.ott_content.access}</span>
 
                                             <div className="absolute top-0 left-0  w-full h-full flex justify-center items-center opacity-0 hover:opacity-1 hover:opacity-100  hover:brightness-100 ">
