@@ -22,7 +22,6 @@ const Home = () => {
             <HomeSlider></HomeSlider>
             <Banner></Banner>
             <TestSlider></TestSlider>
-
             <AllSubCategories></AllSubCategories>
             <MovieTrendingSection></MovieTrendingSection>
             <MainContent></MainContent>
