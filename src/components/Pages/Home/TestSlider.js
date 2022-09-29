@@ -67,9 +67,6 @@ const TestSlider = () => {
 
     return (
         <>
-         
-        
-
             <section className="text-gray-600 body-font">
                 <SliderReact {...settings}>
                     {

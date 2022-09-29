@@ -13,7 +13,7 @@ const SubscriptionPlan = () => {
         slidesToShow: 3,
         slidesToScroll: 1,
         initialSlide: 0,
-        autoplay: true,
+        autoplay: false,
         autoplaySpeed: 2000,
         centerMode: true,
 
@@ -30,7 +30,7 @@ const SubscriptionPlan = () => {
             {
                 breakpoint: 600,
                 settings: {
-                    slidesToShow: 2,
+                    slidesToShow: 1,
                     slidesToScroll: 1,
                     initialSlide: 2
                 }
@@ -76,7 +76,6 @@ const SubscriptionPlan = () => {
 
     return (
         <>
-
             <div className="pricing-table-2 py-8 pb-6 md:py-6">
                 <div className="container mx-auto px-4">
                     <div className="flex flex-col text-center w-full mb-20">
@@ -90,7 +89,7 @@ const SubscriptionPlan = () => {
                             slice.map((buyPlan, index) => (
                                 <div className=" grid grid-cols-3 mt-10" key={index}>
                                     <div className="w-full flex flex-col items-center text-center mt-15">
-                                        <div className="shadow-lg  md:flex gird items-center justify-center my-5 ">
+                                        <div className="shadow-lg grid grid-cols gap-7 p-5  items-center justify-center my-5 ">
                                             <div className="shadow-lg border-4  border-solid border-gray text-center max-w-sm mx-auto rounded-3xl  transition-colors duration-3000  ease-in-out delay-150 bg-text hover:-translate-y-3 hover:scale-110 hover:bg duration-3 p-7">
                                                 <div className="pricing-amount transition-colors duration-3000">
                                                     <div className=""><span className="text-2xl font-bold">{buyPlan.plan_name}<br />
@@ -147,7 +146,7 @@ const SubscriptionPlan = () => {
                                                     </ul>
 
                                                     <div className="mt-6 py-4">
-                                                        <button className="bg-green-600 text-xl text-white py-2 px-6 rounded hover:bg-red-700 transition-colors duration-300">Subscribe</button>
+                                                        <button className="bg-primary text-xl text-white py-2 px-6 rounded hover:bg-red-700 transition-colors duration-300">Subscribe</button>
                                                     </div>
                                                 </div>
                                             </div>

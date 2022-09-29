@@ -48,8 +48,6 @@ const EffectOverflow = () => {
                          </SwiperSlide>
                        ))
                        }
-                      
-                        
                     </div>
                 </div>
             </Swiper>

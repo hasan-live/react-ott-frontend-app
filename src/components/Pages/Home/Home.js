@@ -20,8 +20,8 @@ const Home = () => {
     return (
         <>
             <HomeSlider></HomeSlider>
-            <Banner></Banner>
-            <TestSlider></TestSlider>
+            {/* <Banner></Banner> */}
+            {/* <TestSlider></TestSlider> */}
             <AllSubCategories></AllSubCategories>
             <MovieTrendingSection></MovieTrendingSection>
             <MainContent></MainContent>

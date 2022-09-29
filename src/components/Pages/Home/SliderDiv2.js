@@ -71,31 +71,20 @@ const SliderDiv2 = () => {
     return (
         <>
             <section className="text-gray-600 py-6 mt-5 ">
-               
-
                 <div className="flex flex-wrap m-4"></div>
                 <Slider {...settings}>
 
                     {
-
-                        movTvShows.map((movTvShow, index) => (
-                            
+                     movTvShows.map((movTvShow, index) => ( 
                             <div className=" lg:w-1/6 md:w-1/4 p-3">
                                 <div className=' key={index}'>
                                     <div className='relative  brightness-100 hover:brightness-60 '>
                                         <a href="#" className="group h-92 md:h-92 block  rounded-lg overflow-hidden shadow-lg relative mb-2 lg:mb-3 brightness-100 hover:brightness-50">
                                             <img src={movTvShow.image} loading="lazy" alt="Movie" className="h-72 w-82  object-center group-hover:scale-105 transition duration-200" />
                                            
-
-                                          
                                         </a>
                                     </div>
-                                  
                                 </div>
-
-
-
-
                             </div>
                         ))
                     }
