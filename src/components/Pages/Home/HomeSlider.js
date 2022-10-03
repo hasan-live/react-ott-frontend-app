@@ -35,7 +35,7 @@ const HomeSlider = () => {
         dots: false,
         infinite: true,
         speed: 500,
-        slidesToShow: 3,
+        slidesToShow: 1,
         slidesToScroll: 1,
         initialSlide: 0,
         autoplay: true,
@@ -118,12 +118,12 @@ const HomeSlider = () => {
 
                     <div className="lg:max-w-lg lg:w-full md:w-2/2 w-2/2">
                         <section className="text-gray-600 py-6 mt-5 p-5">
-                            <div className="flex flex-wrap m-4"></div>
+                            <div className="flex items-center justify-center m-8"></div>
                             <Slider {...settings}>
                                 {
                                     movTvShows.map((movTvShow, idx) => (
                                         
-                                        <div className="h-56 grid grid-cols-2 gap-2" key={idx}>
+                                        <div className="h-56 grid grid-cols-3 gap-2" key={movTvShow.id}>
                                             <div className="visiblew-full flex flex-col items-center text-center">
                                                 <div className={idx == imageIndex ? 'slide activeSlide' : 'slide'}>
                                                     <figure className=''><a href='' className="group h-95 md:h-92 w-full block  rounded-lg overflow-hidden shadow-lg relative mb-2 lg:mb-3 brightness-100 hover:brightness-50"><img src={movTvShow.image} className="h-72 w-92  object-center group-hover:scale-105 transition duration-200" alt='image' /></a></figure>
