@@ -5,7 +5,7 @@ import MovieSlider2 from '../../../assets/images/Movies/MoveSlider2.png';
 import axios from 'axios';
 import Slider from 'react-slick';
 
-const MovieSliderSection = () => {
+const LiveSliders = () => {
     const [movSliders, setMovSliders] = useState([]);
     const [isError, setIsError] = useState("");
 
@@ -105,4 +105,4 @@ const MovieSliderSection = () => {
     );
 };
 
-export default MovieSliderSection;
+export default LiveSliders;

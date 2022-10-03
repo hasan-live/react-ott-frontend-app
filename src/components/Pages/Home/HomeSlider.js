@@ -31,23 +31,19 @@ const HomeSlider = () => {
 
 
     var settings = {
-
         dots: false,
         infinite: true,
         speed: 500,
-        slidesToShow: 1,
+        slidesToShow: 3,
         slidesToScroll: 1,
         initialSlide: 0,
         autoplay: true,
         autoplaySpeed: 2000,
         centerMode: true,
         beforeChange: (current, next) => setImageIndex(next),
-
         afterChange: (state) => {
             setSlideContents(state)
         },
-
-
 
         responsive: [
             {
@@ -62,21 +58,24 @@ const HomeSlider = () => {
             {
                 breakpoint: 600,
                 settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 2,
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
                     initialSlide: 2
                 }
             },
             {
                 breakpoint: 480,
                 settings: {
-                    slidesToShow: 1,
+                    slidesToShow: 3,
                     slidesToScroll: 1,
 
                 }
             }
         ]
     };
+
+
+  
 
     const [imageIndex, setImageIndex] = useState(0);
 
@@ -116,22 +115,20 @@ const HomeSlider = () => {
                     }
 
 
-                    <div className="lg:max-w-lg lg:w-full md:w-2/2 w-2/2">
-                        <section className="text-gray-600 py-6 mt-5 p-5">
-                            <div className="flex items-center justify-center m-8"></div>
+                    <div className=" max-w-lg h-full w-full md:w-2/1 w-2/1 mt-11">
+                        <section className="text-gray-600 py-6 mt-5  ">
+                            <div className="flex "></div>
                             <Slider {...settings}>
                                 {
-                                    movTvShows.map((movTvShow, idx) => (
-                                        
-                                        <div className="h-56 grid grid-cols-3 gap-2" key={movTvShow.id}>
-                                            <div className="visiblew-full flex flex-col items-center text-center">
-                                                <div className={idx == imageIndex ? 'slide activeSlide' : 'slide'}>
-                                                    <figure className=''><a href='' className="group h-95 md:h-92 w-full block  rounded-lg overflow-hidden shadow-lg relative mb-2 lg:mb-3 brightness-100 hover:brightness-50"><img src={movTvShow.image} className="h-72 w-92  object-center group-hover:scale-105 transition duration-200" alt='image' /></a></figure>
-                                                </div>
+                                    movTvShows.map((movTvShow, idx) => 
+                                    (
+                                        <div className="grid grid-cols-3 items-center" key={idx}>
+                                        <div className="flex flex-col items-center text-center w-62 h-62">
+                                            <div className={idx == imageIndex ? 'homeslide homeactiveSlide' : 'homeslide'}>
+                                                <figure className='transition ease-in-out delay-150 bg-text  hover:scale-110 hover:bg duration-30'><a href=''><img src={movTvShow.image} alt='image' className='w-62 h-72' /></a></figure>
                                             </div>
                                         </div>
-
-
+                                    </div>
                                        
                                     ))
                                 }
