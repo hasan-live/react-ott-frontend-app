@@ -14,6 +14,7 @@ import MovieTrendingSection from '../Movies/MovieTrendingSection';
 import AllSubCategories from './AllSubCategories';
 import HomeSlider from './HomeSlider';
 import TestSlider from './TestSlider';
+import TvShowsHome from '../TvShows/TvShowsHome';
 
 
 const Home = () => {
@@ -28,7 +29,7 @@ const Home = () => {
             <MoviesSale></MoviesSale>
             <Sports></Sports>
             <MovieSection></MovieSection>
-            <TvShows></TvShows>
+            <TvShowsHome></TvShowsHome>
             <AppAds></AppAds>
             <WhatsMovie></WhatsMovie>
 

@@ -50,7 +50,7 @@ const LiveSliders = () => {
             {
                 breakpoint: 1024,
                 settings: {
-                    slidesToShow: 3,
+                    slidesToShow: 1,
                     slidesToScroll: 1,
                     infinite: true,
                     dots: false
@@ -59,7 +59,7 @@ const LiveSliders = () => {
             {
                 breakpoint: 600,
                 settings: {
-                    slidesToShow: 3,
+                    slidesToShow: 1,
                     slidesToScroll: 1,
                     initialSlide: 1
                 }
@@ -67,7 +67,7 @@ const LiveSliders = () => {
             {
                 breakpoint: 480,
                 settings: {
-                    slidesToShow: 3,
+                    slidesToShow: 1,
                     slidesToScroll: 1,
 
                 }
