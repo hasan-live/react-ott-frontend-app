@@ -51,7 +51,7 @@ const LiveTv = () => {
         <>
             <div className="container px-5 py-6 mx-auto flex-wrap justify-between items-center">
 
-                <div className="flex justify-between my-5">
+                <div className="flex justify-between my-5 ">
                     <div>
                         <h1 className="sm:text-3xl text-2xl font-bold title-font mb-2 text-white">Live</h1>
                         <p className="leading-relaxed text-white text-semibold">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod

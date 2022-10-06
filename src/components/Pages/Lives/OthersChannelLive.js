@@ -1,17 +1,20 @@
 import React, { useState } from 'react';
-import SingleMovie1 from '../../../assets/images/Movies/SingleMovie1.png';
+import liveTv1 from '../../../assets/images/Lives/OthersChannelLive/liveTv1.png';
+import liveTv2 from '../../../assets/images/Lives/OthersChannelLive/liveTv2.png';
+import liveTv3 from '../../../assets/images/Lives/OthersChannelLive/liveTv3.png';
+import liveTv4 from '../../../assets/images/Lives/OthersChannelLive/liveTv4.png';
 import SingleMovie2 from '../../../assets/images/Movies/SingleMovie2.png';
 import SingleMovie3 from '../../../assets/images/Movies/SingleMovie3.png';
 import Slider from "react-slick";
-const images = [SingleMovie1, SingleMovie2, SingleMovie3,SingleMovie1, SingleMovie2, SingleMovie3];
+const images = [liveTv1, liveTv2, liveTv3, liveTv4, liveTv1];
 
 
-const MovieDubbingSection = () => {
+const OthersChannelLive = () => {
 
     var settings = {
         infinite: true,
         speed: 500,
-        slidesToShow: 4,
+        slidesToShow: 5,
         slidesToScroll: 1,
         initialSlide: 0,
         autoplay: true,
@@ -48,10 +51,10 @@ const MovieDubbingSection = () => {
 
     return (
         <>
-            <section className="text-gray-600 py-2">
+            <section className="text-gray-600 py-5">
             <div className="container max-width px-5 mx-auto flex justify-between ">
                     <div className=" flex flex-col divide-y divide-dashed text-center w-full  items-start mb-3">
-                        <h1 className="text-3xl font-bold  title-font mb-4  text-gray-900 uppercase">Bangla dubbing</h1>
+                        <h1 className="text-3xl font-bold  title-font mb-4  text-gray-900 uppercase">Other's channel</h1>
                     </div>
                     <div>
                         <a href='#' className='text-xl  text-bold flex items-center font-bold '>More<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 ml-2">
@@ -90,4 +93,4 @@ const MovieDubbingSection = () => {
     );
 };
 
-export default MovieDubbingSection;
+export default OthersChannelLive;

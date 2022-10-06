@@ -1,28 +1,9 @@
-import axios from 'axios';
-import React, { useEffect, useState } from 'react';
+
+import React from 'react';
 
 const BuySubscriptionPlan = () => {
 
-    const [buyPlans, setBuyPlans] = useState([]);
-    const [isError, setIsError] = useState("");
-
-
-    // using Async Await
-    const getMyPostData = async () => {
-        
-        try {
-            const res = await axios.get("http://159.223.86.243/api/v1/available-subscription-plans");
-            console.log(res.data);
-        } catch (error) {
-            setIsError(error.message);
-        }
-    };
-
-    // NOTE:  calling the function
-    useEffect(() => {
-        getMyPostData();
-    }, []);
-
+  
 
     return (
         <>

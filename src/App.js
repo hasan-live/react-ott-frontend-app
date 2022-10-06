@@ -16,6 +16,9 @@ import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 import Blogs from './components/Pages/Blogs';
+import Movie from './components/Pages/Movies/Movie';
+import Lives from './components/Pages/Lives/Lives';
+import TvShows from './components/Pages/TvShows/TvShows';
 
 
 
@@ -27,6 +30,9 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="about" element={<About />} />
         <Route path="movies" element={<Movies />} />
+        <Route path="movie" element={<Movie />} />
+        <Route path="lives" element={<Lives />} />
+        <Route path="tvshows" element={<TvShows />} />
         <Route path="blogs" element={<Blogs />} />
       </Routes>
       <Footer/>

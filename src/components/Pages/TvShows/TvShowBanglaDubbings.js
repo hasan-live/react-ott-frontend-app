@@ -7,7 +7,7 @@ import Slider from "react-slick";
 const images = [movie1, movie2, movie3, movie1, movie2, movie3, movie1, movie2, movie3];
 
 
-const MovieEnglishSection = () => {
+const TvShowBanglaDubbings = () => {
 
     var settings = {
         infinite: true,
@@ -50,7 +50,7 @@ const MovieEnglishSection = () => {
             <section className="text-gray-600 py-6 mt-5 ">
             <div className="container max-width px-5 mx-auto flex justify-between ">
                     <div className=" flex flex-col divide-y divide-dashed text-center w-full  items-start mb-3">
-                        <h1 className="text-3xl font-bold  title-font mb-4  text-gray-900 uppercase">English</h1>
+                        <h1 className="text-3xl font-bold  title-font mb-4  text-gray-900 uppercase">Bangla Dubbing</h1>
                     </div>
                     <div>
                         <a href='#' className='text-xl  text-bold flex items-center font-bold '>More<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 ml-2">
@@ -118,4 +118,4 @@ const MovieEnglishSection = () => {
     );
 };
 
-export default MovieEnglishSection;
+export default TvShowBanglaDubbings;

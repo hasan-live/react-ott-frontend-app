@@ -7,7 +7,7 @@ const Navbar = () => {
         <>
             <li><Link to='/'>Home</Link></li>
             <li><Link to='/movies'>Movies</Link></li>
-            <li><Link to='/live'>Live</Link></li>
+            <li><Link to='/lives'>Live</Link></li>
             <li><Link to='/tvshows'> TV Shows</Link></li>
             <li tabIndex={0}>
                 <Link to='/'>
@@ -35,7 +35,7 @@ const Navbar = () => {
         </>
     return (
         <>
-            <div className="navbar bg-accent text-base-100 sticky top-0 z-50 ">
+            <div className="navbar bg-accent text-base-100  top-0 z-50 fixed">
                 <div className=" navbar-start container mx-auto">
                     <div className="dropdown">
                         <label tabIndex={0} className="btn btn-ghost lg:hidden">

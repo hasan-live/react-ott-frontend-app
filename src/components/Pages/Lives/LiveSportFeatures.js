@@ -6,7 +6,7 @@ import Slider from "react-slick";
 
 const images = [sport, sport, sport, sport, sport];
 
-const MovieFeatureItems = () => {
+const LiveSportFeatures = () => {
 
     var settings = {
         dots: false,
@@ -53,7 +53,7 @@ const MovieFeatureItems = () => {
             <section className="text-gray-600 py-10">
                 <div className="container max-width  mx-auto">
                     <div className=" flex flex-col divide-y divide-dashed text-center w-full  items-start mb-3">
-                        <h1 className="text-3xl font-bold  title-font mb-4  text-gray-900 uppercase">Sports</h1>
+                        <h1 className="text-3xl font-bold  title-font mb-4  text-gray-900 uppercase"></h1>
                     </div>
                 </div>
 
@@ -64,10 +64,10 @@ const MovieFeatureItems = () => {
                                 <div className="card bg-gray-800 ">
                                     <div className="card-body">
                                         <div className='flex justify-between items-center'>
-                                            <div className='flex'>
+                                            <div className='flex  '>
                                                 <img src={logoSport} className='w-11 h-11' />
                                                 <div className='lg:ml-4 ml-1 text-white text-xl '>
-                                                    <div className=' text-sm lg:text-xl font-bold'>T-Sports</div>
+                                                    <div className=' text-sm lg:text-xl font-bold'>T- Sports</div>
                                                     <div>
                                                         <ul className="flex justify-around text-white-700 text-sm lg:text-xl font-bold ">
                                                             <li className=' text-sm lg:text-xl font-bold' >22-07-2022</li>
@@ -76,15 +76,15 @@ const MovieFeatureItems = () => {
                                                     </div >
                                                 </div>
                                             </div>
-                                            <div className='flex justify-start  items-center justify-center '>
+                                            <div className='flex justify-start  items-center '>
                                                 <div className='lg:ml-3 ml-0 text-white text-sm lg:text-xl '>
                                                     <div className='flex'>
                                                         <div className="flex gap-0.5 -ml-1 justify-center">
-                                                            <h2 className='className=" font-bold mb-3 lg:text-xl  text-sm '> 3,579 k</h2>
+                                                            <h2 className='className=" font-bold mb-3 text-xl'> 3,579 k</h2>
                                                         </div>
                                                     </div>
                                                     <div>
-                                                        <h4 className=" text-sm lg:text-xl font-bold mb-3 ">Watching Now</h4>
+                                                        <h4 className=" text-lg lg:text-xl font-bold mb-3 ">Watching Now</h4>
                                                     </div >
                                                 </div>
                                             </div>
@@ -115,4 +115,4 @@ const MovieFeatureItems = () => {
     );
 };
 
-export default MovieFeatureItems;
+export default LiveSportFeatures;

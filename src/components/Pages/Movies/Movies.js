@@ -8,6 +8,7 @@ import MovieSaleSection from './MovieSaleSection';
 import MovieSliderSection from './MovieSliderSection';
 import MovieTamilSection from './MovieTamilSection';
 import MovieTrendingSection from './MovieTrendingSection';
+import SportLiveFeature from './MovieFeatureItems';
 
 const Movies = () => {
     return (
@@ -20,7 +21,7 @@ const Movies = () => {
             <MovieTamilSection></MovieTamilSection>
             <MovieDubbingSection></MovieDubbingSection>
             <MovieEnglishSection></MovieEnglishSection>
-            <MovieFeatureItems></MovieFeatureItems>
+            <SportLiveFeature></SportLiveFeature>
         </>
     );
 };

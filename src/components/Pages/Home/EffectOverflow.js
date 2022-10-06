@@ -44,13 +44,10 @@ const EffectOverflow = () => {
                        {  
                        images.map((image) => (
                          <SwiperSlide>
-                                 <img className="object-cover object-center rounded" alt="banner" src={image} />
-                                   
+                                 <img className="object-cover object-center rounded" alt="banner" src={image} /> 
                          </SwiperSlide>
                        ))
                        }
-                      
-                        
                     </div>
                 </div>
             </Swiper>

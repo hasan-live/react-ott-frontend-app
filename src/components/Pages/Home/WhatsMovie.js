@@ -12,7 +12,6 @@ const WhatsMovie = () => {
                         <div className="xl:w-7/12 md:w-8/12 flex flex-col justify-center sm:text-center lg:text-left lg:py-6">
                             <h1 className="text-black-800 text-4xl sm:text-5xl md:text-3xl font-bold mb-8 md:mb-8">What's On</h1>
                             <p className=" md:text-lg xl:text-xl font-semibold mb-8 md:mb-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
-
                                 <div className="card bg-gray-800 xl:w-12/12 md:w-11/12 ">
                                     <div className="card-body">
                                         <div className='flex justify-between items-center'>
