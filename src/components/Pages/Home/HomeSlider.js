@@ -78,7 +78,7 @@ const HomeSlider = () => {
     return (
         <>
             <section className="text-gray-600 body-font">
-                <div className="container mx-auto flex px-5 mt-13 py-18 md:flex-row flex-col items-center">
+                <div className="container mx-auto flex px-5 mt-11 py-11 md:flex-row flex-col items-center">
 
                     {
 
@@ -112,14 +112,14 @@ const HomeSlider = () => {
 
 
                     <div className=" max-w-lg h-full w-full md:w-2/1 w-2/1 mt-11">
-                        <section className="text-gray-600 py-6 mt-5  ">
+                        <section className="text-gray-600 py-6 mt-6  ">
                             <div className="flex "></div>
                             <Slider {...settings}>
                                 {
                                     movTvShows.map((movTvShow, idx) => 
                                     (
                                         <div className="grid grid-cols-3 items-center" key={idx}>
-                                        <div className="flex flex-col items-center text-center w-62 h-62  my-5 ">
+                                        <div className="flex flex-col items-center text-center w-62 h-62  my-4 ">
                                             <div className={idx == imageIndex ? 'homeslide homeactiveSlide' : 'homeslide'}>
                                                 <figure className='transition ease-in-out delay-150 bg-text   hover:scale-110 hover:bg duration-30'><a href=''><img src={movTvShow.image} alt='image' className='w-62 h-72'/></a></figure>
                                             </div>
