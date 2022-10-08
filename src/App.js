@@ -19,6 +19,7 @@ import Blogs from './components/Pages/Blogs';
 import Movie from './components/Pages/Movies/Movie';
 import Lives from './components/Pages/Lives/Lives';
 import TvShows from './components/Pages/TvShows/TvShows';
+import MyLists from './components/Pages/MyList/MyLists';
 
 
 
@@ -32,6 +33,7 @@ function App() {
         <Route path="movies" element={<Movies />} />
         <Route path="movie" element={<Movie />} />
         <Route path="lives" element={<Lives />} />
+        <Route path="mylists" element={<MyLists />} />
         <Route path="tvshows" element={<TvShows />} />
         <Route path="blogs" element={<Blogs />} />
       </Routes>

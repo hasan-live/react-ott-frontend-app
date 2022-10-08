@@ -1,10 +1,7 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import Slider from 'react-slick';
-import banner1 from '../../../assets/images/home/banner/banner1.png';
-import EffectOverflow from './EffectOverflow';
-import SliderDiv1 from './SliderDiv1';
-import SliderDiv2 from './SliderDiv2';
+
 
 const HomeSlider = () => {
 
@@ -123,9 +120,9 @@ const HomeSlider = () => {
                                     movTvShows.map((movTvShow, idx) => 
                                     (
                                         <div className="grid grid-cols-3 items-center" key={idx}>
-                                        <div className="flex flex-col items-center text-center w-62 h-62  my-5 ">
+                                        <div className="flex flex-col items-center text-center w-68 h-62  my-5 ">
                                             <div className={idx == imageIndex ? 'homeslide homeactiveSlide' : 'homeslide'}>
-                                                <figure className='transition ease-in-out delay-150 bg-text   hover:scale-110 hover:bg duration-30'><a href=''><img src={movTvShow.image} alt='image' className='w-62 h-72'/></a></figure>
+                                                <figure className='transition ease-in-out delay-150 bg-text   hover:scale-110 hover:bg duration-30'><a href=''><img src={movTvShow.image} alt='image' className='w-68 h-72'/></a></figure>
                                             </div>
                                         </div>
                                     </div>

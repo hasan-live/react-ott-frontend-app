@@ -38,13 +38,13 @@ body {
 }
 
 .homeslide {
-  transform: scale y(1.7);
-  transition: .9s;
+  transform: scale y(1.6);
+  transition: .7s;
   opacity: 16;
 }
 
 .homeactiveSlide {
 
-  transform: scale(1.9);
+  transform: scale(1.7);
 
 }
