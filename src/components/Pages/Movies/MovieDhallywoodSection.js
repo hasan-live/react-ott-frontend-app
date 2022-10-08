@@ -71,6 +71,7 @@ const MovieDhallywoodSection = () => {
     return (
         <>
             <section className="text-gray-600 py-3 ">
+<<<<<<< HEAD
                 <div className="container max-width px-5 mx-auto flex justify-between ">
                     <div className=" flex flex-col divide-y divide-dashed text-center w-full  items-start mb-3">
                         <h1 className="text-3xl font-bold  title-font mb-4  text-gray-900 uppercase">Dhallywood</h1>
@@ -81,6 +82,11 @@ const MovieDhallywoodSection = () => {
                         </svg>
 
                         </a>
+=======
+                <div className="container max-width px-5 mx-auto">
+                    <div className=" flex flex-col divide-y divide-dashed text-center w-full  items-start mb-3">
+                        <h1 className="text-3xl font-bold  title-font mb-4  text-gray-900 uppercase">Dhallywood</h1>
+>>>>>>> e2e39240fe4bf6241fe88933b4fc6e0da9ee07df
                     </div>
                 </div>
 

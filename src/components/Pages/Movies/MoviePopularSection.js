@@ -70,6 +70,7 @@ const MoviePopularSection = () => {
     return (
         <>
             <section className="text-gray-600 mt-8">
+<<<<<<< HEAD
                 <div className="container max-width px-5 mx-auto flex justify-between ">
                     <div className=" flex flex-col divide-y divide-dashed text-center w-full  items-start mb-3">
                         <h1 className="text-3xl font-bold  title-font mb-4  text-gray-900 uppercase">Most popular </h1>
@@ -80,15 +81,27 @@ const MoviePopularSection = () => {
                         </svg>
 
                         </a>
+=======
+            <div className="container max-width px-5 mx-auto">
+                    <div className=" flex flex-col divide-y divide-dashed text-center w-full  items-start mb-3">
+                        <h1 className="text-3xl font-bold  title-font mb-4  text-gray-900 uppercase">Most popular </h1>
+>>>>>>> e2e39240fe4bf6241fe88933b4fc6e0da9ee07df
                     </div>
                 </div>
 
                 <div className="mx-auto">
                     <SliderReact {...settings}>
+<<<<<<< HEAD
 
                         {
                             movTvShows.map((movTvShow) => (
 
+=======
+                     
+                        {
+                            movTvShows.map((movTvShow) => (
+
+>>>>>>> e2e39240fe4bf6241fe88933b4fc6e0da9ee07df
                                 <div className="lg:w-1/4 md:w-1/2 gap- p-2">
                                     <a href="#" className="group h-72  flex items-end  mt-8 overflow-hidden  relative p-8 rounded-lg ">
                                         <img src={movTvShow.ott_content.poster} loading="lazy" alt="slider" className="  object-cover object-center absolute inset-0 group-hover:scale-105 transition duration-50" />

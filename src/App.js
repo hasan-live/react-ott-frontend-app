@@ -19,7 +19,10 @@ import Blogs from './components/Pages/Blogs';
 import Movie from './components/Pages/Movies/Movie';
 import Lives from './components/Pages/Lives/Lives';
 import TvShows from './components/Pages/TvShows/TvShows';
+<<<<<<< HEAD
 import MyLists from './components/Pages/MyList/MyLists';
+=======
+>>>>>>> e2e39240fe4bf6241fe88933b4fc6e0da9ee07df
 
 
 
@@ -33,7 +36,10 @@ function App() {
         <Route path="movies" element={<Movies />} />
         <Route path="movie" element={<Movie />} />
         <Route path="lives" element={<Lives />} />
+<<<<<<< HEAD
         <Route path="mylists" element={<MyLists />} />
+=======
+>>>>>>> e2e39240fe4bf6241fe88933b4fc6e0da9ee07df
         <Route path="tvshows" element={<TvShows />} />
         <Route path="blogs" element={<Blogs />} />
       </Routes>
