@@ -78,7 +78,7 @@ const HomeSlider = () => {
     return (
         <>
             <section className="text-gray-600 body-font">
-                <div className="container mx-auto flex px-5 mt-11 py-12 md:flex-row flex-col items-center">
+                <div className="container mx-auto flex px-5 mt-13 py-18 md:flex-row flex-col items-center">
 
                     {
 
