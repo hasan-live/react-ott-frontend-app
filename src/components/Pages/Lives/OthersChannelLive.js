@@ -51,7 +51,6 @@ const OthersChannelLive = () => {
 
     return (
         <>
-<<<<<<< HEAD
             <section className="text-gray-600 py-5">
             <div className="container max-width px-5 mx-auto flex justify-between ">
                     <div className=" flex flex-col divide-y divide-dashed text-center w-full  items-start mb-3">
@@ -64,13 +63,6 @@ const OthersChannelLive = () => {
 
                         </a>
                     </div>
-=======
-            <section className="text-gray-600 py-2">
-            <div className="container max-width px-5 mx-auto">
-                    <div className=" flex flex-col divide-y divide-dashed text-center w-full  items-start mb-3">
-                        <h1 className="text-3xl font-bold  title-font mb-4  text-gray-900 uppercase">Other's channel</h1>
-                    </div>
->>>>>>> e2e39240fe4bf6241fe88933b4fc6e0da9ee07df
                 </div>
                 <div className="mx-auto">
                     <Slider {...settings}>

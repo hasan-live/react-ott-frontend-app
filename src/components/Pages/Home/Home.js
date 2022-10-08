@@ -8,10 +8,6 @@ import MovieSection from '../Movies/MovieSection';
 import MovieTrendingSection from '../Movies/MovieTrendingSection';
 import AllSubCategories from './AllSubCategories';
 import HomeSlider from './HomeSlider';
-<<<<<<< HEAD
-=======
-import TestSlider from './TestSlider';
->>>>>>> e2e39240fe4bf6241fe88933b4fc6e0da9ee07df
 import TvShowsHome from '../TvShows/TvShowsHome';
 
 
@@ -19,11 +15,6 @@ const Home = () => {
     return (
         <>
             <HomeSlider></HomeSlider>
-<<<<<<< HEAD
-=======
-            {/* <Banner></Banner> */}
-            {/* <TestSlider></TestSlider> */}
->>>>>>> e2e39240fe4bf6241fe88933b4fc6e0da9ee07df
             <AllSubCategories></AllSubCategories>
             <MovieTrendingSection></MovieTrendingSection>
             <MainContent></MainContent>
@@ -33,11 +24,6 @@ const Home = () => {
             <TvShowsHome></TvShowsHome>
             <AppAds></AppAds>
             <WhatsMovie></WhatsMovie>
-<<<<<<< HEAD
-=======
-
-
->>>>>>> e2e39240fe4bf6241fe88933b4fc6e0da9ee07df
         </>
     );
 };

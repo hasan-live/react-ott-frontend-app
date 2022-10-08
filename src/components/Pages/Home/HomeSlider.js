@@ -1,13 +1,6 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import Slider from 'react-slick';
-<<<<<<< HEAD
-=======
-import banner1 from '../../../assets/images/home/banner/banner1.png';
-import EffectOverflow from './EffectOverflow';
-import SliderDiv1 from './SliderDiv1';
-import SliderDiv2 from './SliderDiv2';
->>>>>>> e2e39240fe4bf6241fe88933b4fc6e0da9ee07df
 
 const HomeSlider = () => {
 
@@ -85,11 +78,7 @@ const HomeSlider = () => {
     return (
         <>
             <section className="text-gray-600 body-font">
-<<<<<<< HEAD
                 <div className="container mx-auto flex px-5 mt-11 py-12 md:flex-row flex-col items-center">
-=======
-                <div className="container mx-auto flex px-5 py-12 md:flex-row flex-col items-center">
->>>>>>> e2e39240fe4bf6241fe88933b4fc6e0da9ee07df
 
                     {
 
@@ -130,15 +119,9 @@ const HomeSlider = () => {
                                     movTvShows.map((movTvShow, idx) => 
                                     (
                                         <div className="grid grid-cols-3 items-center" key={idx}>
-<<<<<<< HEAD
                                         <div className="flex flex-col items-center text-center w-62 h-62  my-5 ">
                                             <div className={idx == imageIndex ? 'homeslide homeactiveSlide' : 'homeslide'}>
                                                 <figure className='transition ease-in-out delay-150 bg-text   hover:scale-110 hover:bg duration-30'><a href=''><img src={movTvShow.image} alt='image' className='w-62 h-72'/></a></figure>
-=======
-                                        <div className="flex flex-col items-center text-center w-62 h-62">
-                                            <div className={idx == imageIndex ? 'homeslide homeactiveSlide' : 'homeslide'}>
-                                                <figure className='transition ease-in-out delay-150 bg-text  hover:scale-110 hover:bg duration-30'><a href=''><img src={movTvShow.image} alt='image' className='w-62 h-72' /></a></figure>
->>>>>>> e2e39240fe4bf6241fe88933b4fc6e0da9ee07df
                                             </div>
                                         </div>
                                     </div>
