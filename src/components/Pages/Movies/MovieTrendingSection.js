@@ -5,6 +5,7 @@ import movie3 from '../../../assets/images/Movies/movie3.png';
 
 import Slider from "react-slick";
 import axios from 'axios';
+import { Link } from 'react-router-dom';
 const images = [movie1, movie2, movie3, movie1, movie2, movie3, movie1, movie2, movie3];
 
 
@@ -68,6 +69,8 @@ const MovieTrendingSection = () => {
         ]
     };
 
+   
+
     return (
         <>
             <section className="text-gray-600 py-6 mt-5 ">
@@ -91,17 +94,18 @@ const MovieTrendingSection = () => {
                                             <span className="bg-red-500 text-white text-sm  font-bold uppercase rounded-br-lg absolute left-0 top-10 px-3 py-1.5 hover:opacity-0">{movTranding.ott_content.access}</span>
 
                                             <div className="absolute top-0 left-0  w-full h-full flex justify-center items-center opacity-0 hover:opacity-1 hover:opacity-100  hover:brightness-100 ">
-                                                <a href='#' className="relative flex items-center justify-center  w-min flex-shrink-0 p-2 text-center text-primary  rounded-full group-hover:primary text-white text-5xl bg-primary group-hover:stroke-white" >
+                                                <Link    to={`/movies/${movTranding.id}`} className="relative flex items-center justify-center  w-min flex-shrink-0 p-2 text-center text-primary  rounded-full group-hover:primary text-white text-5xl bg-primary group-hover:stroke-white" >
                                                     <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" strokeWidth="1.7" stroke="currentColor" className="w-12 h-12  ml-1 mx-auto">
                                                         <path strokeLinecap="round" strokeLinejoin="round" d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.348a1.125 1.125 0 010 1.971l-11.54 6.347a1.125 1.125 0 01-1.667-.985V5.653z" />
                                                     </svg>
-                                                </a>
+                                                </Link>
                                             </div>
                                         </a>
                                     </div>
                                     <div className="flex justify-between items-start gap-2 px-2">
                                         <div className="flex flex-col">
-                                        <a href="#" className="text-gray-800 hover:text-gray-500 text-lg lg:text-xl font-bold transition duration-100">{movTranding.ott_content.title}</a>
+                                        <h2 href="#" className="text-gray-800text-lg lg:text-xl font-bold  ">{movTranding.ott_content.title}</h2>
+                                        <p href="#" className="text-gray text-lg  font-semibold ">{movTranding.ott_content.uuid}</p>
                                
                                             <p className='flex items-start m-1'>2018 <span className='ml-2'>2h 3m</span></p>
                                             <p>
@@ -111,6 +115,7 @@ const MovieTrendingSection = () => {
                                                     </svg>
 
                                                     <span className=''>6.9</span>
+                                                   
                                                 </div>
                                             </p>
                                         </div>
