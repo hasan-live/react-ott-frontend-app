@@ -3,10 +3,11 @@ import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import movie from '../../../assets/images/Movies/movie.png';
 import Trending from '../Home/Trending';
+import videojs from 'video.js';
 
 const Movie = (props) => {
     const { movieId } = useParams();
-   
+
 
     const [movTvShows, setMovTvShows] = useState([]);
     const [isError, setIsError] = useState("");
@@ -18,7 +19,7 @@ const Movie = (props) => {
 
         try {
             const res = await axios.get(`http://159.223.86.243/api/v1/single-ott-content/${movieId}`);
-            setMovTvShows(res.data);
+            setMovTvShows(res.data.data);
         } catch (error) {
             setIsError(error.message);
         }
@@ -29,16 +30,16 @@ const Movie = (props) => {
         getMyPostData();
     }, []);
 
-    console.log(movTvShows)
-
+   
 
     return (
         <>
+   
+
             <section className="text-gray-600 body-font">
                 <div className="container mx-auto flex px-5 py-12 mt-12 md:flex-row flex-col items-center">
                     <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-
-                        <h1 className="text-4xl font-bold uppercase">Inception :{movieId}</h1>
+                        <h1 className="text-4xl font-bold uppercase">{movTvShows.title}</h1>
                         <div className="flex items-center">
                             <p>
                                 <div className="flex gap-0.5 -ml-1">
@@ -48,16 +49,14 @@ const Movie = (props) => {
                                 </div>
                             </p>
                             <span className=''>6.8</span>
-                            <p className='flex items-start m-1'> <span>(14,850) </span> 2 h 28 min <span className='ml-2'> 2010</span></p>
+                            <p className='flex items-start m-1'> <span>(14,850) </span> {movTvShows.runtime} min <span className='ml-2'>{movTvShows.year}</span></p>
                             <p className='flex items-start m-1'> <span className='ml-2 border-2'> HD</span> <span className='ml-2 border-2'> HD</span></p>
-
-
                         </div>
-                        <p className="py-6 font-leading-7 break-words">A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a C.E.O.</p>
+                        <p className="py-6 font-leading-7 break-words">{movTvShows.description}</p>
 
 
                         <div className='my-5'>
-                            <p className='flex'><h4>Directors :</h4> <span className='ml-4'><a href=''>Christopher Nolan</a></span></p>
+                            <p className='flex'><h4>Directors :</h4> <span className='ml-4'><a href=''>{movTvShows.content_meta}</a></span></p>
                             <p className='flex'><h4>Starring :</h4> <span className='ml-6'><a href=''>Leonardo DiCaprio, Ken Watanabe, Joseph Gordon-Levitt</a></span></p>
                             <p className='flex'><h4>Genres :</h4> <span className='ml-7'><a href=''>Science Fiction, Fantasy, Adventure, Action</a></span></p>
                             <p className='flex'><h4>Subtitles :</h4> <span className='ml-5'><a href=''>English [CC]</a></span></p>
@@ -74,7 +73,29 @@ const Movie = (props) => {
                         </div>
                     </div>
                     <div className="lg:max-w-lg lg:w-full md:w-2/2 w-6/6">
-                        <img src={movie} className="max-w-lg  shadow-2xl" />
+                        {/* <img src={movTvShows.poster} className="max-w-lg  shadow-2xl h-72 w-92" /> */}
+                        <div className="">
+                            <video
+                                id="my-video"
+                                class="video-js"
+                                controls
+                                reload="auto"
+                                width="640"
+                                height="364"
+                                poster={movTvShows.poster}
+                                data-setup="{}"
+                            >
+                                <source src="https://static.vecteezy.com/system/resources/previews/007/661/167/mp4/cartoon-sunrise-on-a-foggy-morning-video.mp4" type="video/mp4" />
+                                <source src="MY_VIDEO.webm" type="video/webm" />
+                                <p class="vjs-no-js">
+                                    To view this video please enable JavaScript, and consider upgrading to a
+                                    web browser that
+                                    <a href="https://videojs.com/html5-video-support/" target="_blank"
+                                    >supports HTML5 video</a
+                                    >
+                                </p>
+                            </video>
+                        </div>
                         <div className='mt-5 flex justify-center items-center'>
                             <a className="btn btn-primary text-white "><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 ">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3" />
@@ -99,7 +120,8 @@ const Movie = (props) => {
                 </div>
 
 
-              <Trending></Trending>
+
+                <Trending></Trending>
 
             </section>
         </>

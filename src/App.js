@@ -11,7 +11,10 @@ import Movies from './components/Pages/Movies/Movies';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import axios from 'axios';
-// Import Swiper styles
+import ShakaPlayer from 'shaka-player-react';
+import 'shaka-player/dist/controls.css';
+import videojs from 'video.js';
+import 'video.js/dist/video-js.css';
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
