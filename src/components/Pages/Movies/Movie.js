@@ -3,13 +3,16 @@ import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import movie from '../../../assets/images/Movies/movie.png';
 import Trending from '../Home/Trending';
+// import videojs from 'video.js';
 import videojs from 'video.js';
 
 const Movie = (props) => {
     const { movieId } = useParams();
 
-
     const [movTvShows, setMovTvShows] = useState([]);
+    const [metaContents, setMetaContents] = useState([]);
+    const [videoContents, setVideoContents] = useState([]);
+
     const [isError, setIsError] = useState("");
 
 
@@ -20,6 +23,8 @@ const Movie = (props) => {
         try {
             const res = await axios.get(`http://159.223.86.243/api/v1/single-ott-content/${movieId}`);
             setMovTvShows(res.data.data);
+            setMetaContents(res.data.data.content_meta);
+            setVideoContents(res.data.data.content_source?.[1]);
         } catch (error) {
             setIsError(error.message);
         }
@@ -30,12 +35,12 @@ const Movie = (props) => {
         getMyPostData();
     }, []);
 
-   
+
+
+console.log(videoContents.content_source);
 
     return (
         <>
-   
-
             <section className="text-gray-600 body-font">
                 <div className="container mx-auto flex px-5 py-12 mt-12 md:flex-row flex-col items-center">
                     <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
@@ -54,13 +59,21 @@ const Movie = (props) => {
                         </div>
                         <p className="py-6 font-leading-7 break-words">{movTvShows.description}</p>
 
+                        {
+                            metaContents.map((metaContent) => (
+                                // console.log(metaContent)
+                                <div className='my-1'>
+                                    <p className='flex'><h2 className='text-xl uppercase font-bold'>{metaContent.key}</h2><span className='ml-3 mr-2 text-bold'>:</span> <span><a href=''>{metaContent.value}</a></span></p>
+                                </div>
+
+                            ))
+                        }
 
                         <div className='my-5'>
-                            <p className='flex'><h4>Directors :</h4> <span className='ml-4'><a href=''>{movTvShows.content_meta}</a></span></p>
-                            <p className='flex'><h4>Starring :</h4> <span className='ml-6'><a href=''>Leonardo DiCaprio, Ken Watanabe, Joseph Gordon-Levitt</a></span></p>
+                            {/* <p className='flex'><h4>Starring :</h4> <span className='ml-6'><a href=''>Leonardo DiCaprio, Ken Watanabe, Joseph Gordon-Levitt</a></span></p>
                             <p className='flex'><h4>Genres :</h4> <span className='ml-7'><a href=''>Science Fiction, Fantasy, Adventure, Action</a></span></p>
                             <p className='flex'><h4>Subtitles :</h4> <span className='ml-5'><a href=''>English [CC]</a></span></p>
-                            <p className='flex'><h4>Audio languages :</h4> <span className='ml-4'><a href=''>English, English [Audio Description]</a></span></p>
+                            <p className='flex'><h4>Audio languages :</h4> <span className='ml-4'><a href=''>English, English [Audio Description]</a></span></p> */}
                         </div>
 
                         <div className=" mt-4 flex flex-row sm:flex-row sm:justify-start lg:justify-start gap-2">
@@ -74,12 +87,47 @@ const Movie = (props) => {
                     </div>
                     <div className="lg:max-w-lg lg:w-full md:w-2/2 w-6/6">
                         {/* <img src={movTvShows.poster} className="max-w-lg  shadow-2xl h-72 w-92" /> */}
+
+
+
+                        <video
+                            id="my-video"
+                            class="video-js"
+                            controls
+                            preload="auto"
+                            width="640"
+                            height="364"
+                            autoplay="false"
+                            poster={movTvShows.poster}
+                            data-setup="{}"
+                        >
+                            
+                            <video autoplay src={videoContents.content_source}></video>
+                            {/* <video-js autoplay src={videoContents.content_source}></video-js> */}
+
+                            
+                        </video>
+
+
+
                         <div className="">
-                            <video
+
+                            {/* <video
+                                {...videoJsOptions}
+                                poster={movTvShows.poster}
+                                autoplay="true"
+                            >
+                                <source src={videoSrc} type="video/mp4" />
+                                <source src={videoSrc} type="video/webm" />
+
+                            </video> */}
+
+                            {/* <video
                                 id="my-video"
                                 class="video-js"
                                 controls
                                 reload="auto"
+                                plays="auto"
                                 width="640"
                                 height="364"
                                 poster={movTvShows.poster}
@@ -87,14 +135,8 @@ const Movie = (props) => {
                             >
                                 <source src="https://static.vecteezy.com/system/resources/previews/007/661/167/mp4/cartoon-sunrise-on-a-foggy-morning-video.mp4" type="video/mp4" />
                                 <source src="MY_VIDEO.webm" type="video/webm" />
-                                <p class="vjs-no-js">
-                                    To view this video please enable JavaScript, and consider upgrading to a
-                                    web browser that
-                                    <a href="https://videojs.com/html5-video-support/" target="_blank"
-                                    >supports HTML5 video</a
-                                    >
-                                </p>
-                            </video>
+                               
+                            </video> */}
                         </div>
                         <div className='mt-5 flex justify-center items-center'>
                             <a className="btn btn-primary text-white "><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 ">
