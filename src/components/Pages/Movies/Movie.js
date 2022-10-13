@@ -39,7 +39,6 @@ const Movie = (props) => {
     const videoJsOptions = {
         autoplay: true,
         controls: true,
-    
     }
 
 
@@ -90,14 +89,15 @@ const Movie = (props) => {
 
                         {
                             videoContents.map((videoContents, index) => (
-                                <div className="video-js">
+                                <div className="">
                                     <video {...videoJsOptions}
+                                        className="video-js"
                                         poster={movTvShows.poster}
                                         id="my-video"
                                         autoPlay="true"
                                         preload="auto"
                                         width="640"
-                                        height="264"
+                                        height="364"
                                         data-setup="{  }"
                                     >
                                         <source src={videoContents.content_source} type="video/mp4" />
