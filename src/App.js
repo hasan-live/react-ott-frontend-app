@@ -13,6 +13,7 @@ import "slick-carousel/slick/slick-theme.css";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
+import 'video.js/dist/video-js.css';
 import Blogs from './components/Pages/Blogs';
 import Movie from './components/Pages/Movies/Movie';
 import Lives from './components/Pages/Lives/Lives';

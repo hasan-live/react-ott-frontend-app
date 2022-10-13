@@ -86,7 +86,7 @@ const MovieTrendingSection = () => {
                     {
 
                         movTrandings.map((movTranding, index) => (
-                            <div className=" lg:w-1/6 md:w-1/4 p-3">
+                            <div className=" lg:w-1/6 md:w-1/4 p-3" key={movTranding.id}>
                                 <div className=' key={index} '>
                                     <div className='relative  brightness-100 hover:brightness-60 '>
                                         <a href="#" className="group h-92 md:h-92 block  rounded-lg overflow-hidden shadow-lg relative mb-2 lg:mb-3 brightness-100 hover:brightness-50">

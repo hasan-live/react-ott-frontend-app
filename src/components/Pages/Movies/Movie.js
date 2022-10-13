@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import movie from '../../../assets/images/Movies/movie.png';
 import Trending from '../Home/Trending';
+import videojs from 'video.js'
 
 
 const Movie = (props) => {
@@ -23,7 +24,7 @@ const Movie = (props) => {
             const res = await axios.get(`http://159.223.86.243/api/v1/single-ott-content/${movieId}`);
             setMovTvShows(res.data.data);
             setMetaContents(res.data.data.content_meta);
-            setVideoContents(res.data.data.content_source?.[1]);
+            setVideoContents(res.data.data.content_source);
         } catch (error) {
             setIsError(error.message);
         }
@@ -35,8 +36,14 @@ const Movie = (props) => {
     }, []);
 
 
+    const videoJsOptions = {
+        autoplay: true,
+        controls: true,
+    
+    }
 
-    console.log(videoContents.content_source);
+
+    // console.log(videoContents.content_source);
 
     return (
         <>
@@ -59,7 +66,7 @@ const Movie = (props) => {
                         <p className="py-6 font-leading-7 break-words">{movTvShows.description}</p>
 
                         {
-                            metaContents.map((metaContent) => (
+                            metaContents.map((metaContent, index) => (
                                 // console.log(metaContent)
                                 <div className='my-1'>
                                     <p className='flex'><h2 className='text-xl uppercase font-bold'>{metaContent.key}</h2><span className='ml-3 mr-2 text-bold'>:</span> <span><a href=''>{metaContent.value}</a></span></p>
@@ -68,12 +75,6 @@ const Movie = (props) => {
                             ))
                         }
 
-                        <div className='my-5'>
-                            {/* <p className='flex'><h4>Starring :</h4> <span className='ml-6'><a href=''>Leonardo DiCaprio, Ken Watanabe, Joseph Gordon-Levitt</a></span></p>
-                            <p className='flex'><h4>Genres :</h4> <span className='ml-7'><a href=''>Science Fiction, Fantasy, Adventure, Action</a></span></p>
-                            <p className='flex'><h4>Subtitles :</h4> <span className='ml-5'><a href=''>English [CC]</a></span></p>
-                            <p className='flex'><h4>Audio languages :</h4> <span className='ml-4'><a href=''>English, English [Audio Description]</a></span></p> */}
-                        </div>
 
                         <div className=" mt-4 flex flex-row sm:flex-row sm:justify-start lg:justify-start gap-2">
                             <a className="btn btn-primary text-white ">Watch Now <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
@@ -85,12 +86,29 @@ const Movie = (props) => {
                         </div>
                     </div>
                     <div className="lg:max-w-lg lg:w-full md:w-2/2 w-6/6">
-                        <img src={movTvShows.poster} className="max-w-lg  shadow-2xl h-72 w-92" />
-                        
+                        {/* <img src={movTvShows.poster} className="max-w-lg  shadow-2xl h-72 w-92" /> */}
 
-                        <div className="">
-                       
-                        </div>
+                        {
+                            videoContents.map((videoContents, index) => (
+                                <div className="video-js">
+                                    <video {...videoJsOptions}
+                                        poster={movTvShows.poster}
+                                        id="my-video"
+                                        autoPlay="true"
+                                        preload="auto"
+                                        width="640"
+                                        height="264"
+                                        data-setup="{  }"
+                                    >
+                                        <source src={videoContents.content_source} type="video/mp4" />
+                                        <source src={videoContents.content_source} type="video/webm" />
+                                    </video>
+                                </div>
+
+
+                            ))
+                        }
+
                         <div className='mt-5 flex justify-center items-center'>
                             <a className="btn btn-primary text-white "><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 ">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3" />
