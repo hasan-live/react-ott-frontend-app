@@ -14,7 +14,6 @@
     "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.1",
     "react-slick": "^0.29.0",
-    "shaka-player-react": "^1.1.5",
     "slick-carousel": "^1.8.1",
     "swiper": "^8.3.2",
     "web-vitals": "^2.1.4"
@@ -46,7 +45,7 @@
   "devDependencies": {
     "autoprefixer": "^10.4.8",
     "postcss": "^8.4.16",
-    "tailwindcss": "^3.1.8",
-    "video.js": "^7.20.3"
+    "tailwindcss": "^3.1.8"
+    
   }
 }

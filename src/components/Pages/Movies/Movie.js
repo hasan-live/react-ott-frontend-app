@@ -3,8 +3,7 @@ import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import movie from '../../../assets/images/Movies/movie.png';
 import Trending from '../Home/Trending';
-// import videojs from 'video.js';
-import videojs from 'video.js';
+
 
 const Movie = (props) => {
     const { movieId } = useParams();
@@ -37,7 +36,7 @@ const Movie = (props) => {
 
 
 
-console.log(videoContents.content_source);
+    console.log(videoContents.content_source);
 
     return (
         <>
@@ -86,57 +85,11 @@ console.log(videoContents.content_source);
                         </div>
                     </div>
                     <div className="lg:max-w-lg lg:w-full md:w-2/2 w-6/6">
-                        {/* <img src={movTvShows.poster} className="max-w-lg  shadow-2xl h-72 w-92" /> */}
-
-
-
-                        <video
-                            id="my-video"
-                            class="video-js"
-                            controls
-                            preload="auto"
-                            width="640"
-                            height="364"
-                            autoplay="false"
-                            poster={movTvShows.poster}
-                            data-setup="{}"
-                        >
-                            
-                            <video autoplay src={videoContents.content_source}></video>
-                            {/* <video-js autoplay src={videoContents.content_source}></video-js> */}
-
-                            
-                        </video>
-
-
+                        <img src={movTvShows.poster} className="max-w-lg  shadow-2xl h-72 w-92" />
+                        
 
                         <div className="">
-
-                            {/* <video
-                                {...videoJsOptions}
-                                poster={movTvShows.poster}
-                                autoplay="true"
-                            >
-                                <source src={videoSrc} type="video/mp4" />
-                                <source src={videoSrc} type="video/webm" />
-
-                            </video> */}
-
-                            {/* <video
-                                id="my-video"
-                                class="video-js"
-                                controls
-                                reload="auto"
-                                plays="auto"
-                                width="640"
-                                height="364"
-                                poster={movTvShows.poster}
-                                data-setup="{}"
-                            >
-                                <source src="https://static.vecteezy.com/system/resources/previews/007/661/167/mp4/cartoon-sunrise-on-a-foggy-morning-video.mp4" type="video/mp4" />
-                                <source src="MY_VIDEO.webm" type="video/webm" />
-                               
-                            </video> */}
+                       
                         </div>
                         <div className='mt-5 flex justify-center items-center'>
                             <a className="btn btn-primary text-white "><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 ">
