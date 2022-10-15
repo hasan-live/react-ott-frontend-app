@@ -37,13 +37,11 @@ const Movie = (props) => {
 
 
     const videoJsOptions = {
-        autoplay: true,
-        controls: true,
+        width: "630",
+        height: "340",
     }
 
-
-    // console.log(videoContents.content_source);
-
+    console.log(videoContents.content_source);
     return (
         <>
             <section className="text-gray-600 body-font">
@@ -74,7 +72,6 @@ const Movie = (props) => {
                             ))
                         }
 
-
                         <div className=" mt-4 flex flex-row sm:flex-row sm:justify-start lg:justify-start gap-2">
                             <a className="btn btn-primary text-white ">Watch Now <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
                                 <path strokeLinecap="round" strokeLinejoin="round" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
@@ -84,11 +81,10 @@ const Movie = (props) => {
 
                         </div>
                     </div>
-                    <div className="lg:max-w-lg lg:w-full md:w-2/2 w-6/6">
+                    <div className="lg:max-w-lg lg:w-full md:w-2/2 w-6/6 video-js " id="my-video">
                         {/* <img src={movTvShows.poster} className="max-w-lg  shadow-2xl h-72 w-92" /> */}
-
-                        {
-                            videoContents.map((videoContents, index) => (
+                        {/* {
+                            videoContents.map((videoContent) => (
                                 <div className="">
                                     <video {...videoJsOptions}
                                         className="video-js"
@@ -100,15 +96,39 @@ const Movie = (props) => {
                                         height="364"
                                         data-setup="{  }"
                                     >
-                                        <source src={videoContents.content_source} type="video/mp4" />
-                                        <source src={videoContents.content_source} type="video/webm" />
+
+                                        <source src={videoContent.content_source} type="video/mp4" />                                      <source src={videoContent.content_source} type="video/webm" />
                                     </video>
+                                    <span>{videoContent.fps}</span> ~~
+                                    <span>{videoContent.source_format}</span>
+
                                 </div>
 
-
                             ))
-                        }
+                        } */}
+                        {
+                            <video
+                                {...videoJsOptions}
 
+                                loop="loop"
+
+                                class=""
+                                controls
+                                autoPlay="true"
+                                preload="auto"
+
+                                poster={movTvShows.poster}
+                                data-setup="{}"
+
+                            >
+                                {videoContents.map((videoContent) => (
+                                    <source src={videoContent.content_source} type="video/mp4" />
+                                ))
+                                }
+
+                            </video>
+
+                        }
                         <div className='mt-5 flex justify-center items-center'>
                             <a className="btn btn-primary text-white "><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 ">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3" />
@@ -131,9 +151,7 @@ const Movie = (props) => {
                     </div>
 
                 </div>
-
-
-
+                
                 <Trending></Trending>
 
             </section>

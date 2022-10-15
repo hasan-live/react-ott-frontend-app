@@ -88,12 +88,12 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    <a href="">
+                    <Link to="login">
                         <button type="button" className="text-white bg-[#FF3333] hover:bg-[#FF3533]/80 focus:ring-4 focus:outline-none focus:ring-[#FF3333]/50 font-medium rounded-lg text-sm px-3 py-2.5 text-center inline-flex items-center dark:hover:bg-[#FF3333]/40 dark:focus:ring-gray-600">
                             Sign In
                             <img src={signlogo} className="ml-3 h-4 sm:h-6 " alt="sign Logo" />
                         </button>
-                    </a>
+                    </Link>
 
                     <button className="btn btn-primary ml-3 ">
                         <div className="indicator">
