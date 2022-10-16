@@ -4,6 +4,7 @@ import movie2 from '../../../assets/images/Movies/movie2.png';
 import movie3 from '../../../assets/images/Movies/movie3.png';
 
 import Slider from "react-slick";
+import { Link } from 'react-router-dom';
 const images = [movie1, movie2, movie3, movie1, movie2, movie3, movie1, movie2, movie3];
 
 
@@ -96,15 +97,24 @@ const LiveMovies = () => {
                                         </div>
                                     </div>
                                 </div>
-
-
-
-
                             </div>
                         ))
                     }
                 </Slider>
+                <div className="container mx-auto p-6 ">
+                    <div className=" mt-8 text flex justify-center">
+                        <Link to="" className="btn btn-primary text-white ">View more</Link>
+                    </div>
+                    <div className='text-center mt-5'>
+                        <h2 className='text-2xl font-bold'>Most views Live</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore</p>
+                    </div>
+
+                </div>
             </section>
+
+            
 
 
         </>

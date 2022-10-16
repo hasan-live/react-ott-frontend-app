@@ -3,8 +3,6 @@ import React from 'react';
 
 const BuySubscriptionPlan = () => {
 
-  
-
     return (
         <>
             <div className="pricing-table-2 py-6 pb-6 md:py-6">

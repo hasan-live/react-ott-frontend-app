@@ -48,7 +48,7 @@ const MovieEnglishSection = () => {
     return (
         <>
             <section className="text-gray-600 py-6 mt-5 ">
-            <div className="container max-width px-5 mx-auto flex justify-between ">
+                <div className="container max-width px-5 mx-auto flex justify-between ">
                     <div className=" flex flex-col divide-y divide-dashed text-center w-full  items-start mb-3">
                         <h1 className="text-3xl font-bold  title-font mb-4  text-gray-900 uppercase">English</h1>
                     </div>
@@ -60,7 +60,7 @@ const MovieEnglishSection = () => {
                         </a>
                     </div>
                 </div>
-                
+
                 <div className="flex flex-wrap m-4"></div>
                 <Slider {...settings}>
                     {
@@ -68,7 +68,7 @@ const MovieEnglishSection = () => {
                         images.map((image, index) => (
                             <div className=" lg:w-1/6 md:w-1/4 p-4">
                                 <div className=' key={index}'>
-                                <div className='relative  brightness-100 hover:brightness-60 '>
+                                    <div className='relative  brightness-100 hover:brightness-60 '>
                                         <a href="#" className="group h-82 md:h-42 block  rounded-lg overflow-hidden shadow-lg relative mb-2 lg:mb-3 brightness-100 hover:brightness-50">
                                             <img src={image} loading="lazy" alt="Movie" className="w-full h-full object-cover object-center group-hover:scale-105 transition duration-200" />
                                             <span className="bg-red-500 text-white text-sm  font-bold uppercase rounded-br-lg absolute left-0 top-10 px-3 py-1.5 hover:opacity-0">New</span>
@@ -111,7 +111,20 @@ const MovieEnglishSection = () => {
                         ))
                     }
                 </Slider>
+                <div className="container mx-auto p-6 ">
+                    <div className=" mt-8 text flex justify-center">
+                        <a className="btn btn-primary text-white ">View more</a>
+                    </div>
+                    <div className='text-center mt-5'>
+                        <h2 className='text-2xl font-bold'>Most Played Movies</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore</p>
+                    </div>
+
+                </div>
             </section>
+
+
 
 
         </>

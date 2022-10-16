@@ -5,6 +5,7 @@ import movie3 from '../../../assets/images/Movies/movie3.png';
 
 import Slider from "react-slick";
 import axios from 'axios';
+import { Link } from 'react-router-dom';
 const images = [movie1, movie2, movie3, movie1, movie2, movie3, movie1, movie2, movie3];
 
 
@@ -76,12 +77,9 @@ const TvShowsHome = () => {
                         <h1 className="text-3xl font-bold  title-font mb-4  text-gray-900 uppercase">TV Show </h1>
                     </div>
                 </div>
-
                 <div className="flex flex-wrap m-4"></div>
                 <Slider {...settings}>
-
                     {
-
                         movTvShows.map((movTvShow, index) => (
                             <div className=" lg:w-1/6 md:w-1/4 p-3">
                                 <div className=' key={index}'>
@@ -102,33 +100,31 @@ const TvShowsHome = () => {
                                     <div className="flex justify-between items-start gap-2 px-2">
                                         <div className="flex flex-col">
                                             <a href="#" className="text-gray-800 hover:text-gray-500 text-lg lg:text-xl font-bold transition duration-100">{movTvShow.ott_content.title}</a>
-
                                             <p className='flex items-start m-1'>2018 <span className='ml-2'>2h 3m</span></p>
                                             <p>
                                                 <div className="flex gap-0.5 -ml-1">
                                                     <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 text-yellow-400" viewBox="0 0 20 20" fill="currentColor">
                                                         <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                                                     </svg>
-
                                                     <span className=''>6.9</span>
                                                 </div>
                                             </p>
                                         </div>
-
                                         <div className="flex flex-col items-end">
                                             {/* <span className="text-gray-600 lg:text-lg font-bold">৳ 200</span> */}
-
                                         </div>
                                     </div>
                                 </div>
-
-
-
-
                             </div>
                         ))
                     }
                 </Slider>
+
+                <div className="container mx-auto p-6 ">
+                    <div className=" mt-8 text flex justify-center">
+                        <Link to="" className="btn btn-primary text-white ">View more</Link>
+                    </div>
+                </div>
             </section>
 
 

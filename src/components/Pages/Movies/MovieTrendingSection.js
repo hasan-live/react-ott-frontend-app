@@ -105,7 +105,7 @@ const MovieTrendingSection = () => {
                                     <div className="flex justify-between items-start gap-2 px-2">
                                         <div className="flex flex-col">
                                         <h2 href="#" className="text-gray-800text-lg lg:text-xl font-bold  ">{movTranding.ott_content.title}</h2>
-                                        <p href="#" className="text-gray text-lg  font-semibold ">{movTranding.ott_content.uuid}</p>
+                                        
                                
                                             <p className='flex items-start m-1'>2018 <span className='ml-2'>2h 3m</span></p>
                                             <p>
